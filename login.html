@@ -18,7 +18,7 @@
             recalc = function() {
                 var clientWidth = docE1.clientWidth;
                 if (!clientWidth) return;
-                if(clientWidth>400){
+                if(clientWidth>1024){
                      docE1.style.fontSize='22px'
                     return 
                 }
@@ -43,9 +43,21 @@
 				</div>
 				<img src="images/login/login_top.jpg" alt="">
 			</div>
-
-
-			<div class="bottom-img-box">
+			<form action="" class="form-login">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="请输入注册手机号码">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="请输入密码">
+				</div>
+				<div class="form-group form-submit-box">
+					<input type="submit" value="登录" class="form-btn-login">
+					<br>
+					<a href="" class="fr f-black">忘记密码?</a>
+				</div>
+			</form>
+			<div class="bottom-img-box g-fixed">
+				<a href="">申请<br>加盟</a>
 				<img src="images/login/login_join.png" alt="">
 			</div>
 		</div>

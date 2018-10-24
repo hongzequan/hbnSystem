@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>等级提升</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" id="levelUp">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="levelUp">
+            <div class="mylevel">
+                <div class="font-box">我的等级:代理</div>
+                <img src="images/leveBg.jpg" alt="">
+				</div>
+                <div class="grade j-tab">
+                    <p>点击角色可切换查看特权</p>
+                    <ul>
+                        <li class="active">
+                            <div class="img-box"><img src="images/user/daili.png" alt=""></div>代理
+                        </li>
+                        <li>
+                            <div class="img-box"><img src="images/user/xiaoshou.png" alt=""></div>销售代表
+                        </li>
+                        <li>
+                            <div class="img-box"><img src="images/user/jingli.png" alt=""></div>经理
+                        </li>
+                    </ul>
+                </div>
+                <div class="privilege">
+                    <p>说明：达到对应条件自动升级，系统推送通知，无需手动操作。</p>
+
+                    <!-- 底下这部分的权限，内容需要技术看一下需求文档配置哦。 -->
+                    <div class="item j-item" >
+                    	<div class="list" style="display: block;">
+                            <h3><span>代理特权</span></h3>
+                            <ul>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>销售利润<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级拓展奖励<span class="fr iconfont icon-you"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h3><span>销售代表特权</span></h3>
+                            <ul>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>销售利润<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级拓展奖励<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级升级奖励<span class="fr iconfont icon-you"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="list" >
+                            <h3><span>经理特权</span></h3>
+                            <ul>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>销售利润<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级拓展奖励<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级升级奖励<span class="fr iconfont icon-you"></span></a></li>
+                                <li><a href=""><i class="icon iconfont icon-yifu"></i>下级抽成奖励<span class="fr iconfont icon-you"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-footer g-fixed">
+            <div class="g-col">
+                <a href="">返回</a>
+            </div>
+            <div class="g-col2">
+                <a href="" class="g-btn">等级提升</a>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
