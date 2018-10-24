@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>系统登录</title>
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>400){
+                     docE1.style.fontSize='22px'
+                    return 
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+<body>
+	<!-- 所有的页面都写在这个class底下 -->
+	<div class="wrap">
+		<div class="login">
+			<div class="top-img-box">
+				<div class="font-box">
+					<p>您好</p>
+					<span>欢迎登录好帮你</span>
+				</div>
+				<img src="images/login/login_top.jpg" alt="">
+			</div>
+
+
+			<div class="bottom-img-box">
+				<img src="images/login/login_join.png" alt="">
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
