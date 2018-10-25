@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>等级提升</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" id="levelUp">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="levelUp-task">
+            <div class="box-shadow-bottom">
+                <div class="state">
+                    <div class="border">
+                        <span>
+                        状态：待确认
+                    </span>
+                        <span class="fr">
+                        等级提成为：<i class="f-red">经理</i>
+                    </span>
+                    </div>
+                </div>
+                <div class="state task">
+                    <div class="border">
+                        <span>完成条件：购买2份提货券<br>货券可用于提取对应数量商品</span>
+                        <span class="fr f-red">（价值¥136.00）</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <div class="img-box"><img src="images/product_1.png" alt=""></div>
+                                <div class="font-box">① . 洗发露、高浓缩洗衣液组合</div>
+                        </li>
+                        <li>
+                            <div class="img-box"><img src="images/product_1.png" alt=""></div>
+                                <div class="font-box">② . 洗发露、婴儿洗发沐浴组合</div>
+                        </li>
+                        <span>或</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="g-row">
+                <div class="g-card">
+                    <img src="images/levelUp_detail_1.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="g-footer g-fixed">
+                <div class="g-col">
+                    <a href="">返回</a>
+                </div>
+                <div class="g-col2">
+                    <a href="" class="g-btn">支付升级</a>
+                </div>
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/swiper.min.js"></script>
+            <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>等级提升</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" id="levelUp">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="levelUp-task">
+            <div class="box-shadow-bottom">
+                <div class="state">
+                    <div class="border">
+                        <span>
+                        状态：待确认
+                    </span>
+                        <span class="fr">
+                        等级提成为：<i class="f-red">经理</i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="g-row levelUp-manager">
+                <h3>升级条件</h3>
+                <ul>
+                    <li>
+                        <div class="g-card">
+                            <div class="top">
+                                <div class="font-box">
+                                    ① . 拓展10名微客并且10名微客升为微代，
+                                </div>
+                                <div class="g-btn-border">免费</div>
+                            </div>
+                            <p>升级奖励：<i class="f-red">¥700.00</i></p>
+                            <a href="" class="btn"><img src="images/btn_1.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="g-card">
+                            <div class="top">
+                                <div class="font-box">
+                                    ② . 拓展30名微客并且5名微客升为微代，
+                                </div>
+                                <div class="g-btn-border">免费</div>
+                            </div>
+                            <p>升级奖励：<i class="f-red">¥700.00</i></p>
+                            <a href="" class="btn"><img src="images/btn_1.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="g-card">
+                            <div class="top">
+                                <div class="font-box">
+                                    ③ . 一次性购买50份提货券。
+                                </div>
+                                <div class="g-btn-border f-red">¥2900.00</div>
+                            </div>
+                            <p>升级奖励：<i class="f-red">¥1900.00</i></p>
+                            <a href="" class="btn"><img src="images/btn_1.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+                <p>说明：方式①、②满足条件则自动升级，无需手动操作；方式③需完成支付则自动升级；</p>
+            </div>
+        </div>
+        <div class="g-footer g-fixed">
+            <div class="g-col">
+                <a href="" class="g-btn">返回</a>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

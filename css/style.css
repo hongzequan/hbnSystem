@@ -8,11 +8,10 @@ video{max-width: 100%;}
 a{display: inline-block;vertical-align: middle;}
 *{box-sizing: border-box;}
 .f-12{font-size: 12px;}
-.f-red{color: #d14829;}
-.f-red2{color: #ec4253;}
-.f-blue{color: #5a7af6;}
-.f-gray{color: #919191;}
-.f-green{color: #2ca935;}
+.f-red{color: #ec3b3b !important;}
+.f-blue{color: #5a7af6 !important;;}
+.f-gray{color: #919191 !important;;}
+.f-green{color: #2ca935 !important;;}
 
 .f-line{text-decoration:line-through;color: #aaa;}
 .f-black{color: #333;}
@@ -25,14 +24,22 @@ a{display: inline-block;vertical-align: middle;}
 .wrap{height: 100%;}
 /*公用模块*/
 .g-top{padding-bottom: 2.5rem;}
+/*公用底部*/
 .g-footer{position: fixed;left: 0;bottom: 0;width: 100%;-webkit-box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);height: 2.5rem;display: flex;padding: 0 .5rem;align-items: center;justify-content: center;text-align: center;font-size: .7rem;background: #fff;}
 .g-footer .g-col a{display: block;margin:0 auto;}
 .g-col{flex: 1;}
 .g-col2{flex: 2;}
+/*阴影*/
+.box-shadow-bottom {box-shadow: 0.125rem 0.216506rem 0.6rem rgba(51, 51, 51, 0.1);}
+.box-shadow-top{-webkit-box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);}
+/*卡片样式*/
+.g-card{padding: .5rem;position: relative;border-radius: 6px;background: #fff;box-shadow: 0.125rem 0.216506rem 0.6rem rgba(51, 51, 51, 0.1);}
 
-
-
-.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #8ca7ff , #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #8ca7ff , #7569ff); /* 标准的语法 */border-radius: 1rem;font-size: .75rem;}
+/*渐变色的按钮-主要*/
+.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #8ca7ff , #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #8ca7ff , #7569ff); /* 标准的语法 */border-radius: 1rem;font-size: .7rem;}
+/*边框型按钮*/
+.g-btn-border{display: inline-block; vertical-align: middle; border: 1px solid #7d8dfe; color: #7d8dfe; padding: 0 1rem; line-height: 1.25rem; border-radius: 1rem; } 
+.g-row{margin:.5rem;}
 /*公用模块*/
 /*登录页面*/
 .login{}
@@ -69,26 +76,48 @@ a{display: inline-block;vertical-align: middle;}
 .grade ul li.active:after {content: ''; display: block; position: absolute; left: 50%; bottom: -.75rem; transform: translateX(-50%); width: 0; height: 0; border-width: 0 10px 10px; border-style: solid; border-color: transparent transparent #dcdcdc; } 
 .grade ul li.active img {transition: all .5s ease; transform: scale(1.2); } 
 .grade ul li:before {content: ''; position: absolute; left: -15%; top: 1.75rem; width: 30%; height: 2px; background: #ebebeb; } 
-.grade ul li:first-child:before {display: none; } .levelUp .privilege {font-size: .7rem; padding: .5rem; } 
+.grade ul li:first-child:before {display: none; } .levelUp .privilege {font-size: .65rem;padding: .5rem;} 
 .levelUp .privilege p {font-size: 12px;margin-bottom: .5rem;} 
 .levelUp .privilege .item {} 
 .levelUp .privilege .item .list {display: none;} 
 .levelUp .privilege .item .list h3 {text-align: center;position: relative;margin-bottom: .5rem;} 
-.levelUp .privilege .item .list h3:before {content: ''; display: block; position: absolute; left: 50%; top: .5rem; width: 8rem; height: 2px; background: #d8d8d8; margin-left: -4rem; } 
+.levelUp .privilege .item .list h3:before {content: '';display: block;position: absolute;left: 50%;top: .5rem;width: 80%;height: 2px;background: #d8d8d8;margin-left: -40%;} 
 .levelUp .privilege .item .list h3 span{background: #f7f7f7; display: inline-block; position: relative; z-index: 1; padding: 0 .5rem; } 
 .levelUp .privilege .item .list ul {} 
 .levelUp .privilege .item .list ul li {margin-bottom: .5rem;border-radius: 6px;overflow: hidden;box-shadow: 0.125rem 0.216506rem 0.6rem rgba(51, 51, 51, 0.1);} 
-.levelUp .privilege .item .list ul li a {display: block;background: #fff; padding: .5rem;} 
-.levelUp .privilege .item .list ul li .icon {display: inline-block;width: 1rem;height: 1rem;line-height: 1rem;text-align: center;font-size: .7rem;position: relative;top: -2px;} 
-.levelUp .privilege .item .list ul li .icon-you {margin-top: 2px;font-size: 1rem;}
+.levelUp .privilege .item .list ul li a {display: block;background: #fff;padding: .5rem .5rem .5rem 1.6rem;position: relative;} 
+.levelUp .privilege .item .list ul li .icon {display: inline-block;width: 1rem;height: 1rem;line-height: 1rem;text-align: center;font-size: 1rem;position: absolute;left: .5rem;top: .5rem;} 
+.levelUp .privilege .item .list ul li .icon-gengduo {font-size: 1rem;}
 .levelUp .privilege .item .list ul li:last-child{margin-bottom: 0;}
 
+/*微客提升*/
+.levelUp-task{font-size: .65rem;} .levelUp-task .state{position: relative;background: #fff;padding: .5rem .5rem 0;} .levelUp-task .border{border-bottom: 1px solid #d9d9d9;padding-bottom: .5rem;} .levelUp-task .task .fr{position: absolute;top: .5rem;right: 0;} .levelUp-task .row{/* border: 1px solid #d9d9d9; */ background: #fff; padding: .5rem 0; } .levelUp-task .row ul{border: 1px solid #d9d9d9; margin: 0 .5rem; border-radius: 6px; padding: .5rem; position: relative; } .levelUp-task .row ul li{margin-top: .5rem; display: flex; align-items: center; justify-content: center; } .levelUp-task .row ul li:first-child{margin-top:0;} .levelUp-task .row ul li:after{content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .levelUp-task .row ul li .img-box{float: left; margin-right: .5rem; width: 4rem; } .levelUp-task .row ul li .img-box img{} .levelUp-task .row ul li .font-box{font-size: .6rem; } .levelUp-task .row ul span{position: absolute; top: 50%; margin-top: -.5rem; left: 65%; } .levelUp-task .g-row img{width: 100%;}
+.levelUp-manager{} .levelUp-manager h3{text-align: center; line-height: 1.5rem; } .levelUp-manager p{font-size: 12px; } .levelUp-manager ul{} .levelUp-manager ul li{margin-bottom: .5rem; } .levelUp-manager ul li .g-card{padding: .75rem .5rem;} .levelUp-manager ul li .g-card .top{/* padding-bottom: .5rem; */} .levelUp-manager ul li .g-card .font-box{display: inline-block;width: 70%;vertical-align: top;height: 2.25rem;} .levelUp-manager ul li .g-card .g-btn-border{vertical-align: top;float: right;}.levelUp-manager ul li .g-card .g-btn-border.f-red{font-size: .6rem;padding: 0 .5rem;} .levelUp-manager ul li .g-card .btn{position: absolute;right: -.15rem;bottom: .5rem;width: 5rem;}
+
+/*等级提升*/
 
 
- /*等级提升*/
+
+
+
+
+
+
+
+
+
 
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){
   .g-fixed{max-width: 1024px;left: 50% !important;margin-left: -512px;}
 }
+
+
+
+
+
+
+
+
+
