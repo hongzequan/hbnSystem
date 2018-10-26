@@ -126,7 +126,7 @@ a{display: inline-block;vertical-align: middle;}
 .sharePage{font-size: .65rem;}
 .sharePage .user-info{border-bottom: 1px solid #ddd; margin-bottom: .5rem; padding-bottom: .5rem; } 
 .sharePage .user-info .img-box{float: left; width: 3rem; margin-right: .5rem; }
-.sharePage .user-info .img-box img{width: 100%; } 
+.sharePage .user-info .img-box img{width: 100%;pointer-events: initial;} 
 .sharePage .user-info .font-box{overflow: hidden; padding-right: 5rem; } 
 .sharePage .user-info .font-box p{margin-top: .5rem; } 
 .sharePage .user-info .font-box span{color: #949494; } 
