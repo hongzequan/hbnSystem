@@ -99,11 +99,12 @@ a{display: inline-block;vertical-align: middle;}
 .levelUp .privilege .item .list ul li:last-child{margin-bottom: 0;}
 
 /*经理等级提升弹窗*/
-.highest-level{font-size: .7rem;text-align: center;padding: 1rem .5rem;}
-.highest-level .img-box{margin-bottom: .5rem;}
-.highest-level .img-box img{width: 6rem;}
-.highest-level .font-box strong{font-size: .8rem;}
-
+.g-style1{font-size: .7rem;text-align: center;padding: 1rem .5rem;}
+.g-style1 .img-box{margin-bottom: .5rem;}
+.g-style1 .img-box img{width: 6rem;}
+.g-style1 .font-box {line-height: 1.25rem;}
+.g-style1 .font-box strong{font-size: .8rem;}
+.g-style1 .href{border-top: 1px solid #eee; padding-top: .5rem; margin-top: .5rem; line-height: 1.5rem; }
 
 /*微客提升*/
 .levelUp-task{font-size: .65rem;} .levelUp-task .state{position: relative;background: #fff;padding: .5rem .5rem 0;} .levelUp-task .border{border-bottom: 1px solid #d9d9d9;padding-bottom: .5rem;} .levelUp-task .task .fr{position: absolute;top: .5rem;right: 0;} .levelUp-task .row{/* border: 1px solid #d9d9d9; */ background: #fff; padding: .5rem 0; } .levelUp-task .row ul{border: 1px solid #d9d9d9; margin: 0 .5rem; border-radius: 6px; padding: .5rem; position: relative; } .levelUp-task .row ul li{margin-top: .5rem; display: flex; align-items: center; justify-content: center; } .levelUp-task .row ul li:first-child{margin-top:0;} .levelUp-task .row ul li:after{content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .levelUp-task .row ul li .img-box{float: left; margin-right: .5rem; width: 4rem; } .levelUp-task .row ul li .img-box img{} .levelUp-task .row ul li .font-box{font-size: .6rem; } .levelUp-task .row ul span{position: absolute; top: 50%; margin-top: -.5rem; left: 65%; } .levelUp-task .g-row img{width: 100%;}
@@ -132,7 +133,7 @@ a{display: inline-block;vertical-align: middle;}
 
 /*用户中心*/
 
-.big-banner{}
+.big-banner{position: relative;}
 .big-banner img{width: 100%;}
 
 .sharePage{font-size: .65rem;}
@@ -154,13 +155,25 @@ a{display: inline-block;vertical-align: middle;}
 .modal.fade .modal-dialog{-webkit-transition: -webkit-transform .3s ease-out; -o-transition: -o-transform .3s ease-out; transition: transform .3s ease-out; -webkit-transform: translate(0,-25%); -ms-transform: translate(0,-25%); -o-transform: translate(0,-25%); transform: translate(0,-25%);} 
 .modal.in .modal-dialog{-webkit-transform: translate(0,0); -ms-transform: translate(0,0); -o-transform: translate(0,0); transform: translate(0,0);} 
 .modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;background-color: #000;} 
-.modal-backdrop.fade{    filter: alpha(opacity=0); opacity: 0;}
-.modal-backdrop.in{filter: alpha(opacity=50); opacity: .5;} 
+.modal-backdrop.fade{filter: alpha(opacity=0); opacity: 0;}
+.modal-backdrop.in{filter: alpha(opacity=50);opacity: .7;} 
 .fade{opacity: 0; -webkit-transition: opacity .15s linear; -o-transition: opacity .15s linear; transition: opacity .15s linear;}
 
 .modal .closeModal{color: #fff; font-size: 1.75rem; margin-top: 2rem; position: absolute; left: 50%; width: 2rem; text-align: center; margin-left: -1rem; }
 /*公用弹窗*/
 
+/*申请提现*/
+.getCash{font-size: .65rem;}
+.getCash .big-banner{}
+.getCash .big-banner .font-box{position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%,-50%); text-align: center; } 
+.getCash .big-banner .font-box p{font-size: .7rem;}
+.getCash .big-banner .font-box span{font-size: 1.5rem;}
+.getCash .g-card ul{}
+.getCash .g-card ul li{font-size: .75rem;line-height: 2rem;border-bottom: 1px solid #e3e3e3;}
+.getCash .g-card ul li:last-child{border-bottom:0;}
+.getCash .g-card ul li.g-title{padding-left: .5rem;}
+.getCash .g-card ul li.g-title:before{top: .6rem;left: 0;}
+/*申请提现*/
 
 
 
