@@ -37,7 +37,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-card{padding: .5rem;position: relative;border-radius: 6px;background: #fff;box-shadow: 0.125rem 0.216506rem 0.6rem rgba(51, 51, 51, 0.1);}
 .g-card+.g-card{margin-top: .5rem;}
 /*渐变色的按钮-主要*/
-.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #8ca7ff , #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #8ca7ff , #7569ff); /* 标准的语法 */border-radius: 1rem;font-size: .7rem;}
+.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #8ca7ff , #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #8ca7ff , #7569ff); /* 标准的语法 */border-radius: 1rem;font-size: .7rem;text-align: center;}
 /*边框型按钮*/
 .g-btn-border{display: inline-block; vertical-align: middle; border: 1px solid #7d8dfe; color: #7d8dfe; padding: 0 1rem; line-height: 1.25rem; border-radius: 1rem; } 
 .g-row{margin:.5rem;}
@@ -120,10 +120,20 @@ a{display: inline-block;vertical-align: middle;}
 
 /*用户中心*/
 
+.big-banner{}
+.big-banner img{width: 100%;}
 
-
-
-
+.sharePage{font-size: .65rem;}
+.sharePage .user-info{border-bottom: 1px solid #ddd; margin-bottom: .5rem; padding-bottom: .5rem; } 
+.sharePage .user-info .img-box{float: left; width: 3rem; margin-right: .5rem; }
+.sharePage .user-info .img-box img{width: 100%; } 
+.sharePage .user-info .font-box{overflow: hidden; padding-right: 5rem; } 
+.sharePage .user-info .font-box p{margin-top: .5rem; } 
+.sharePage .user-info .font-box span{color: #949494; } 
+.sharePage .user-info .g-btn{position: absolute; right: .5rem; top: 1rem; width: 5rem; line-height: 1.5rem; height: 1.5rem; font-size: .6rem; }
+.sharePage .text-info{padding-left: 3.5rem; margin-bottom: .5rem; } 
+.sharePage .img-info{}
+.sharePage .img-info img{margin-bottom: .5rem;margin-right: .5rem;}
 
 
 
