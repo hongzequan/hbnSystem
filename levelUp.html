@@ -88,12 +88,33 @@
                 </div>
             </div>
         </div>
+        <!-- 经理提升 -->
+        <!-- bootstarp公用弹窗框架 -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <!-- 以下内容为自定义内容 -->
+                <div class="g-card highest-level">
+                    <div class="g-title2"><span>升级说明</span></div>
+                    <div class="img-box">
+                        <img src="images/bixin.png" alt="">
+                    </div>
+                    <div class="font-box">
+                        <strong>恭喜您，经理已是最高级别！</strong>
+                        <p>后续将开放更多经理特权~</p>
+                    </div>
+                </div>
+                <i class="iconfont icon-guanbi closeModal" onclick="closeModal()"></i>
+                <!-- 以下内容为自定义内容 -->
+            </div>
+            <div class="modal-backdrop"></div>
+        </div>
+
         <div class="g-footer g-fixed">
             <div class="g-col">
                 <a href="">返回</a>
             </div>
             <div class="g-col2">
-                <a href="" class="g-btn">等级提升</a>
+                <a  class="g-btn" onclick="openModal()">等级提升</a>
             </div>
         </div>
         <script src="js/jquery.min.js"></script>

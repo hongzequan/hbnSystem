@@ -44,6 +44,11 @@ a{display: inline-block;vertical-align: middle;}
 .g-low{margin:.5rem 0}
 .g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;}
 .g-title:before{content:'';position: absolute;display: block;top: .35rem;left: .5rem;width: 4px;height: .75rem;background: -webkit-linear-gradient(#8ca7ff, #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(#8ca7ff, #7569ff); /* 标准的语法 */}
+
+.g-title2{text-align: center;position: relative;margin-bottom: .5rem;font-size: .8rem;} 
+.g-title2:before {content: '';display: block;position: absolute;left: 50%;top: .5rem;width: 80%;height: 2px;background: #d8d8d8;margin-left: -40%;} 
+.g-title2 span{background: #fff;display: inline-block;position: relative;z-index: 1;padding: 0 .5rem;} 
+
 /*公用模块*/
 /*登录页面*/
 .login{}
@@ -83,7 +88,7 @@ a{display: inline-block;vertical-align: middle;}
 .levelUp .privilege p {font-size: 12px;margin-bottom: .5rem;} 
 .levelUp .privilege .item {} 
 .levelUp .privilege .item .list {display: none;} 
-.levelUp .privilege .item .list h3 {text-align: center;position: relative;margin-bottom: .5rem;} 
+.levelUp .privilege .item .list h3 {text-align: center;position: relative;margin-bottom: .5rem;font-size: .8rem;} 
 .levelUp .privilege .item .list h3:before {content: '';display: block;position: absolute;left: 50%;top: .5rem;width: 80%;height: 2px;background: #d8d8d8;margin-left: -40%;} 
 .levelUp .privilege .item .list h3 span{background: #f7f7f7; display: inline-block; position: relative; z-index: 1; padding: 0 .5rem; } 
 .levelUp .privilege .item .list ul {} 
@@ -92,6 +97,13 @@ a{display: inline-block;vertical-align: middle;}
 .levelUp .privilege .item .list ul li .icon {display: inline-block;width: 1rem;height: 1rem;line-height: 1rem;text-align: center;font-size: 1rem;position: absolute;left: .5rem;top: .5rem;} 
 .levelUp .privilege .item .list ul li .icon-gengduo {font-size: 1rem;}
 .levelUp .privilege .item .list ul li:last-child{margin-bottom: 0;}
+
+/*经理等级提升弹窗*/
+.highest-level{font-size: .7rem;text-align: center;padding: 1rem .5rem;}
+.highest-level .img-box{margin-bottom: .5rem;}
+.highest-level .img-box img{width: 6rem;}
+.highest-level .font-box strong{font-size: .8rem;}
+
 
 /*微客提升*/
 .levelUp-task{font-size: .65rem;} .levelUp-task .state{position: relative;background: #fff;padding: .5rem .5rem 0;} .levelUp-task .border{border-bottom: 1px solid #d9d9d9;padding-bottom: .5rem;} .levelUp-task .task .fr{position: absolute;top: .5rem;right: 0;} .levelUp-task .row{/* border: 1px solid #d9d9d9; */ background: #fff; padding: .5rem 0; } .levelUp-task .row ul{border: 1px solid #d9d9d9; margin: 0 .5rem; border-radius: 6px; padding: .5rem; position: relative; } .levelUp-task .row ul li{margin-top: .5rem; display: flex; align-items: center; justify-content: center; } .levelUp-task .row ul li:first-child{margin-top:0;} .levelUp-task .row ul li:after{content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .levelUp-task .row ul li .img-box{float: left; margin-right: .5rem; width: 4rem; } .levelUp-task .row ul li .img-box img{} .levelUp-task .row ul li .font-box{font-size: .6rem; } .levelUp-task .row ul span{position: absolute; top: 50%; margin-top: -.5rem; left: 65%; } .levelUp-task .g-row img{width: 100%;}
@@ -136,8 +148,18 @@ a{display: inline-block;vertical-align: middle;}
 .sharePage .img-info img{margin-bottom: .5rem;margin-right: .5rem;}
 
 
+/*公用弹窗*/
+.modal{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; display: none; overflow: hidden; -webkit-overflow-scrolling: touch; outline: 0;} 
+.fade.in{opacity: 1;} .modal-dialog{position: relative;width: auto;margin: 20% .5rem .5rem .5rem;z-index: 11;} 
+.modal.fade .modal-dialog{-webkit-transition: -webkit-transform .3s ease-out; -o-transition: -o-transform .3s ease-out; transition: transform .3s ease-out; -webkit-transform: translate(0,-25%); -ms-transform: translate(0,-25%); -o-transform: translate(0,-25%); transform: translate(0,-25%);} 
+.modal.in .modal-dialog{-webkit-transform: translate(0,0); -ms-transform: translate(0,0); -o-transform: translate(0,0); transform: translate(0,0);} 
+.modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;background-color: #000;} 
+.modal-backdrop.fade{    filter: alpha(opacity=0); opacity: 0;}
+.modal-backdrop.in{filter: alpha(opacity=50); opacity: .5;} 
+.fade{opacity: 0; -webkit-transition: opacity .15s linear; -o-transition: opacity .15s linear; transition: opacity .15s linear;}
 
-
+.modal .closeModal{color: #fff; font-size: 1.75rem; margin-top: 2rem; position: absolute; left: 50%; width: 2rem; text-align: center; margin-left: -1rem; }
+/*公用弹窗*/
 
 
 

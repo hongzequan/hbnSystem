@@ -17,3 +17,17 @@ function setCopyText(obj) {
         alert("当前浏览器不支持此功能，请手动复制。")
     });
 }
+
+// 打开弹窗
+function openModal(){
+    var mondal=$('.modal');
+    var mask=$('.modal-backdrop')
+    mondal.show().addClass('fade in');
+    mask.show().addClass('fade in');
+}
+function closeModal(){
+    var mondal=$('.modal');
+    var mask=$('.modal-backdrop')
+    mondal.hide().removeClass('fade in');
+    mask.hide().removeClass('fade in');
+}
