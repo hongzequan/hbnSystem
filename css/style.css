@@ -44,11 +44,13 @@ a{display: inline-block;vertical-align: middle;}
 .g-low{margin:.5rem 0}
 .g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;}
 .g-title:before{content:'';position: absolute;display: block;top: .35rem;left: .5rem;width: 4px;height: .75rem;background: -webkit-linear-gradient(#8ca7ff, #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(#8ca7ff, #7569ff); /* 标准的语法 */}
+.g-top-fixed{background: #fff;padding: .25rem 0;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;}
+.g-top-fixed-row{padding-top: 2.5rem;margin-top: 0;}
+.g-no-border-bottom{border-bottom: 0;}
 
 .g-title2{text-align: center;position: relative;margin-bottom: .5rem;font-size: .8rem;} 
 .g-title2:before {content: '';display: block;position: absolute;left: 50%;top: .5rem;width: 80%;height: 2px;background: #d8d8d8;margin-left: -40%;} 
 .g-title2 span{background: #fff;display: inline-block;position: relative;z-index: 1;padding: 0 .5rem;} 
-
 /*公用模块*/
 /*登录页面*/
 .login{}
@@ -193,11 +195,13 @@ a{display: inline-block;vertical-align: middle;}
 .makeMoney{font-size: .65rem;}
 .makeMoney .topLevel{background: #fff;padding: .4rem .5rem;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;} .makeMoney .topLevel .img-box{width: 2.5rem; margin-right: .5rem; height: 2.5rem; overflow: hidden; } .makeMoney .topLevel .img-box img{width: 100%;} .makeMoney .topLevel .font-box{float: left;font-size: .8rem;height: 2.5rem;line-height: 2.5rem;} .makeMoney .topLevel .fr{position: absolute;right: .5rem;top: 1.15rem;} .makeMoney .topLevel .fr i{font-size: .7rem; margin-right: .2rem; }
 .makeMoney .g-title{border-bottom:0;}
-.makeMoney .g-low{padding-top: 3rem;}
+.makeMoney .g-low{padding-top: 3.5rem;margin-top: 0;}
 .makeMoney ul{margin: .25rem .5rem; } .makeMoney ul li{margin-bottom: .5rem;} .makeMoney ul li .g-card{padding: .75rem .5rem; } .makeMoney ul li  .img-box{width: 5rem; margin-right: .5rem; } .makeMoney ul li  .img-box img{width: 100%; } .makeMoney ul li  .font-box{overflow: hidden; } .makeMoney ul li  .font-box strong{display: block; font-weight: normal; font-size: .7rem; margin-bottom: .25rem; } .makeMoney ul li  .font-box p{color: #8a8a8a;margin-bottom: .5rem;font-size: .6rem;} .makeMoney ul li .g-btn-border{padding: 0 .75rem; }
 
+.selectProductShare{font-size: .65rem;}
+.selectProductShare .g-card{} .selectProductShare .g-card .img-box{float: left; margin-right: .5rem; width: 5rem; height: 5rem; } .selectProductShare .g-card .img-box img{width: 100%; } .selectProductShare .g-card .font-box{position: relative; font-size: .65rem; overflow: hidden; margin: .25rem 0; height: 4.5rem; } .selectProductShare .g-card .font-box h3{font-weight: bold;font-size: .65rem;} .selectProductShare .g-card .font-box p{position: absolute; left: 0; bottom: 0; } .selectProductShare .g-card  a{position: absolute; right: 0; top: 50%; transform: translateY(-50%); } .selectProductShare .g-card  a i{font-size: 1rem; color: #7e8efe; } /*开始赚钱*/
 
-/*开始赚钱*/
+
 
 
 /*超出1024的处理方式*/
