@@ -53,7 +53,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-title2 span{background: #fff;display: inline-block;position: relative;z-index: 1;padding: 0 .5rem;} 
 /*公用模块*/
 /*登录页面*/
-.login{}
+.login{font-size: .65rem;}
 .login .top-img-box{position: relative;}
 .login .top-img-box img{width: 100%;}
 .login .top-img-box .font-box{position: absolute;top: 50%;left: 15px;transform: translateY(-50%);color: #fff;}
@@ -213,10 +213,30 @@ a{display: inline-block;vertical-align: middle;}
 
 /*邀请加盟*/
 .joinBg{background: url('../images/joinBg.jpg');background-size: cover;}
-.join img{width: 100%;padding-top: 4rem;}
+.join .join-icon{width: 100%;padding-top: 4rem;}
 .join .video-box{position: absolute;top: 13rem;left: 3.9rem;}
 .join .video-box video{width: 8.2rem;background: #000;display: block;}
 /*邀请加盟*/
+/*加盟注册*/
+.joinRegister{font-size: .65rem;}
+.joinRegister .top-img-box{position: relative;}
+.joinRegister .top-img-box img{width: 100%;}
+.joinRegister .top-img-box .font-box{position: absolute;top: 50%;left: 15px;transform: translateY(-50%);color: #fff;}
+.joinRegister .top-img-box p{font-size: 1.25rem;}
+.joinRegister .top-img-box span{font-size: .75rem;}
+.join-form{}
+.join-form strong{float: left;}
+.join-form .input-box{overflow: hidden;position: relative;}
+.join-form .input-box input{width: 100%;padding-right: 1.25rem;}
+.join-form .input-box .right{position: absolute; right: 0; top: 0;} 
+.join-form .input-box i.right{color:#a0a1a6;font-size: .9rem;}
+.joinRegister .submit-box{text-align: center;padding-top: 8rem;} 
+.joinRegister .submit-box p{margin-bottom: .5rem; } 
+.joinRegister .submit-box input{width: 80%; }
+
+
+
+/*加盟注册*/
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){

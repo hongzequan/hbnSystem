@@ -19,15 +19,29 @@ function setCopyText(obj) {
 }
 
 // 打开弹窗
-function openModal(){
-    var mondal=$('.modal');
-    var mask=$('.modal-backdrop')
+function openModal() {
+    var mondal = $('.modal');
+    var mask = $('.modal-backdrop')
     mondal.show().addClass('fade in');
     mask.show().addClass('fade in');
 }
-function closeModal(){
-    var mondal=$('.modal');
-    var mask=$('.modal-backdrop')
+
+function closeModal() {
+    var mondal = $('.modal');
+    var mask = $('.modal-backdrop')
     mondal.hide().removeClass('fade in');
     mask.hide().removeClass('fade in');
+}
+// 注册加盟表单，点击清空数据
+function clearVal(obj) {
+    $(obj).siblings('input').val('');
+}
+// 查看密码
+function showPassword(obj) {
+    var input =$(obj).siblings('input')
+    if (input.attr("type") == "password"){
+        input[0].type = "text"
+    } else{
+        input[0].type = "password";
+    }
 }

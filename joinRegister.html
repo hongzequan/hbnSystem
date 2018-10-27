@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>注册加盟</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body>
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="joinRegister">
+            <div class="top-img-box">
+                <div class="font-box">
+                    <p>您好</p>
+                    <span>请完善您的账户信息</span>
+                </div>
+                <img src="images/login/login_top.jpg" alt="">
+            </div>
+                <div class="g-row">
+                    <form action="" class="join-form">
+                        <div class="g-card clearfix">
+                            <strong>您的姓名：</strong>
+                            <div class="input-box">
+                                <input type="text" placeholder="请输入您的姓名">
+                                <i class="iconfont icon-guanbi right" onclick="clearVal(this)"></i>
+                            </div>
+                        </div>
+                        <div class="g-card clearfix">
+                            <strong>手机号码：</strong>
+                            <div class="input-box">
+                                <input type="number" placeholder="请输入您的手机号码">
+                                <i class="iconfont icon-guanbi right" onclick="clearVal(this)"></i>
+                            </div>
+                        </div>
+                        <div class="g-card clearfix">
+                            <strong>验证码：</strong>
+                            <div class="input-box">
+                                <input type="text" placeholder="请输入您的手机号码" style="padding-right: 4rem;">
+                                <a  class="f-blue right">获取验证码</a>
+                            </div>
+                        </div>
+                        <div class="g-card clearfix">
+                            <strong>密码：</strong>
+                            <div class="input-box">
+                                <input type="password" placeholder="请输入您的密码">
+                                <i class="iconfont icon-yanjing  right" onclick="showPassword(this)"></i>
+                            </div>
+                        </div>
+                        <div class="submit-box">
+                            <p>加盟可成为：<span class="f-red">微代</span></p>
+                            <input type="submit"  class="g-btn" value="登录">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
