@@ -201,8 +201,15 @@ a{display: inline-block;vertical-align: middle;}
 .selectProductShare{font-size: .65rem;}
 .selectProductShare .g-card{} .selectProductShare .g-card .img-box{float: left; margin-right: .5rem; width: 5rem; height: 5rem; } .selectProductShare .g-card .img-box img{width: 100%; } .selectProductShare .g-card .font-box{position: relative; font-size: .65rem; overflow: hidden; margin: .25rem 0; height: 4.5rem; } .selectProductShare .g-card .font-box h3{font-weight: bold;font-size: .65rem;} .selectProductShare .g-card .font-box p{position: absolute; left: 0; bottom: 0; } .selectProductShare .g-card  a{position: absolute; right: 0; top: 50%; transform: translateY(-50%); } .selectProductShare .g-card  a i{font-size: 1rem; color: #7e8efe; } /*开始赚钱*/
 
-
-
+.shareProduct{font-size: .65rem;}
+.shareProduct .text-box{margin-bottom: .5rem; } .shareProduct .big-card{margin-bottom: 1rem; } .shareProduct .big-card .img-box{} .shareProduct .big-card .img-box img{width: 100%; } .shareProduct .big-card h3{text-align: center; font-weight: bold; } .shareProduct .g-title2 span{background: #f7f7f7; }
+.shareProduct .user-card{}
+.shareProduct .user-card .g-col{position: relative;padding: 0 .5rem;}
+.shareProduct .user-card .g-col:before{content: '';display: block;position: absolute;height: 80%;top: 8%;left: 0;width: 1px;background: #eee;}
+.shareProduct .user-card .g-col:first-child:before{display: none;}
+.shareProduct .user-card .img-box{width: 1.75rem;float: left;margin-right: .25rem;}
+.shareProduct .user-card .img-box img{width: 100%;}
+.shareProduct .user-card .font-box{overflow: hidden; font-size: .7rem; padding: 1rem 0; }
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){

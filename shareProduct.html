@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>分享商品</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" >
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+       <div class="shareProduct">
+         <div class="big-banner">
+           <img src="images/share.png" alt="">
+         </div>
+         <div class="g-row">
+           <p class="text-box">分享商品：（好友打开后为该商品详情页面）</p>
+           <div class="g-card big-card">
+             <div class="img-box">
+               <img src="images/zhuanqu.jpg" alt="">
+             </div>
+             <h3>日用品专区</h3>
+           </div>
+           <div class="g-title2">
+             <span>可得盈利</span>
+           </div>
+           <div class="g-card user-card g-flex">
+             <div class="g-col">
+               <div class="img-box">
+                 <img src="images/icon/laoyonghu.png" alt="">
+               </div>
+               <div class="font-box">
+                 <span class="f-red">¥30.00</span>/份
+               </div>
+             </div>
+             <div class="g-col">
+               <div class="img-box">
+                 <img src="images/icon/xinyonghu.png" alt="">
+               </div>
+               <div class="font-box">
+                 <span class="f-red">¥60.00</span>/份
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+     <div class="g-footer g-fixed">
+            <div class="g-col">
+                <a href="" class="g-btn">返回</a>
+            </div>
+        </div>
+        
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
