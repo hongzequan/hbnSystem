@@ -189,6 +189,15 @@ a{display: inline-block;vertical-align: middle;}
 .incomeDetail ul.detail-ul2 li:last-child{border-bottom: 0;padding-bottom: 0;margin-bottom: 0;}
 
 
+/*开始赚钱*/
+.makeMoney{font-size: .65rem;}
+.makeMoney .topLevel{background: #fff;padding: .4rem .5rem;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;} .makeMoney .topLevel .img-box{width: 2.5rem; margin-right: .5rem; height: 2.5rem; overflow: hidden; } .makeMoney .topLevel .img-box img{width: 100%;} .makeMoney .topLevel .font-box{float: left;font-size: .8rem;height: 2.5rem;line-height: 2.5rem;} .makeMoney .topLevel .fr{position: absolute;right: .5rem;top: 1.15rem;} .makeMoney .topLevel .fr i{font-size: .7rem; margin-right: .2rem; }
+.makeMoney .g-title{border-bottom:0;}
+.makeMoney .g-low{padding-top: 3rem;}
+.makeMoney ul{margin: .25rem .5rem; } .makeMoney ul li{margin-bottom: .5rem;} .makeMoney ul li .g-card{padding: .75rem .5rem; } .makeMoney ul li  .img-box{width: 5rem; margin-right: .5rem; } .makeMoney ul li  .img-box img{width: 100%; } .makeMoney ul li  .font-box{overflow: hidden; } .makeMoney ul li  .font-box strong{display: block; font-weight: normal; font-size: .7rem; margin-bottom: .25rem; } .makeMoney ul li  .font-box p{color: #8a8a8a;margin-bottom: .5rem;font-size: .6rem;} .makeMoney ul li .g-btn-border{padding: 0 .75rem; }
+
+
+/*开始赚钱*/
 
 
 /*超出1024的处理方式*/

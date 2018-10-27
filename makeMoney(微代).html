@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>开始赚钱</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" >
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="makeMoney">
+            <div class="topLevel clearfix box-shadow-bottom">
+                <div class="img-box fl">
+                    <img src="images/user/head.png" alt="">
+                </div>
+                <div class="font-box">
+                    当前等级：<i class="f-red">微代</i>
+                </div>
+                <span class="fr">
+                    <a href=""><i class="iconfont icon-question"></i>操作说明</a>
+                </span>
+            </div>
+            <div class="g-low">
+                <div class="g-title">请选择您的使用方式</div>
+                <ul>
+                    <li>
+                        <div class="g-card clearfix">
+                            <div class="fl img-box">
+                                <img src="images/icon/icon1.png" alt="">
+                            </div>
+                            <div class="font-box">
+                                <strong>销售赚钱</strong>
+                                <p>好友通过分享链接购买后，<br>则结算对应提成奖励到账户。</p>
+                                <a href="" class="g-btn-border">开始赚钱</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="g-card clearfix">
+                            <div class="fl img-box">
+                                <img src="images/icon/icon4.png" alt="">
+                            </div>
+                            <div class="font-box">
+                                <strong>下级拓展</strong>
+                                <p>每邀请一个微客升级成微代，<br>即可获得拓展奖励。</p>
+                                <a href="" class="g-btn-border">邀请赚钱</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="g-card clearfix">
+                            <div class="fl img-box">
+                                <img src="images/icon/icon5.png" alt="">
+                            </div>
+                            <div class="font-box">
+                                <strong>升级奖励</strong>
+                                <p>升级成为经理可获得平台奖励，<br>并享受更多赚钱方式。</p>
+
+                                <a href="" class="g-btn-border">马上升级</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <ul class="g-footer sys-footer g-fixed">
+            <li class="g-col active">
+                <a href="">
+                    <i class="img-icon sr"></i>
+                    收入概况
+                </a>
+            </li>
+            <li class="g-col">
+                <a href="">
+                    <i class="img-icon sc"></i>
+                    分享素材
+                </a>
+            </li>
+            <li class="g-col start">
+                <a href="">
+                    开始<br>赚钱
+                </a>
+            </li>
+            <li class="g-col">
+                <a href="">
+                    <i class="img-icon gk"></i>
+                    我的顾客
+                </a>
+            </li>
+            <li class="g-col">
+                <a href="">
+                    <i class="img-icon user"></i>
+                    个人中心
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
