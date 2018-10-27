@@ -211,6 +211,13 @@ a{display: inline-block;vertical-align: middle;}
 .shareProduct .user-card .img-box img{width: 100%;}
 .shareProduct .user-card .font-box{overflow: hidden; font-size: .7rem; padding: 1rem 0; }
 
+/*邀请加盟*/
+.joinBg{background: url('../images/joinBg.jpg');background-size: cover;}
+.join img{width: 100%;padding-top: 4rem;}
+.join .video-box{position: absolute;top: 13rem;left: 3.9rem;}
+.join .video-box video{width: 8.2rem;background: #000;display: block;}
+/*邀请加盟*/
+
 /*超出1024的处理方式*/
 @media (min-width: 1024px){
   .g-fixed{max-width: 1024px;left: 50% !important;margin-left: -512px;}
