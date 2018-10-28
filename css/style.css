@@ -43,7 +43,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-btn-border{display: inline-block; vertical-align: middle; border: 1px solid #7d8dfe; color: #7d8dfe; padding: 0 1rem; line-height: 1.25rem; border-radius: 1rem; } 
 .g-row{margin:.5rem;}
 .g-low{margin:.5rem 0}
-.g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;padding-bottom: .5rem;}
+.g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;}
 .g-title:before{content:'';position: absolute;display: block;top: .35rem;left: .5rem;width: 4px;height: .75rem;background: -webkit-linear-gradient(#8ca7ff, #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(#8ca7ff, #7569ff); /* 标准的语法 */}
 .g-top-fixed{background: #fff;padding: .25rem 0;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;}
 .g-top-fixed-row{padding-top: 2.5rem;margin-top: 0;}
@@ -213,7 +213,8 @@ a{display: inline-block;vertical-align: middle;}
 .topLevel .fr i{font-size: .7rem; margin-right: .2rem; }
 .topLevel-bottom{padding-top: 3.25rem;margin-top: 0;}
 
-.makeMoney .g-title{border-bottom:0;}
+.makeMoney .g-title{border-bottom:0;line-height: 2rem;}
+.makeMoney .g-title:before{top: .6rem;}
 .makeMoney .g-low{padding-top: 3.25rem;margin-top: 0;}
 .makeMoney ul{margin: .25rem .5rem; } .makeMoney ul li{margin-bottom: .5rem;} .makeMoney ul li .g-card{padding: .75rem .5rem; } .makeMoney ul li  .img-box{width: 5rem; margin-right: .5rem; } .makeMoney ul li  .img-box img{width: 100%; } .makeMoney ul li  .font-box{overflow: hidden; } .makeMoney ul li  .font-box strong{display: block; font-weight: normal; font-size: .7rem; margin-bottom: .25rem; } .makeMoney ul li  .font-box p{color: #8a8a8a;margin-bottom: .5rem;font-size: .6rem;} .makeMoney ul li .g-btn-border{padding: 0 .75rem; }
 
@@ -356,6 +357,7 @@ a{display: inline-block;vertical-align: middle;}
 /*我的团队*/
 .teamIncome{font-size: .65rem;}
 .teamIncome .g-top-fixed-row{padding-top: 3.25rem}
+.teamIncome .g-title{padding-bottom: .5rem;}
 .teamIncome .g-title .g-btn-border{padding: 0 .5rem; border-radius: .5rem .5rem 0 .5rem; } .teamIncome .g-title .g-btn{display: inline-block; padding: 0 .5rem; width: auto; line-height: 1.5rem; height: 1.5rem; border-radius: .5rem .5rem 0 .5rem; }
 .teamIncome .g-card ul{padding: .5rem; } 
 .teamIncome .g-card ul li{border-bottom: 1px solid #eee; margin-bottom: .5rem; padding-bottom: .5rem; } 
