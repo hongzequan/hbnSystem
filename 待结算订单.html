@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>待结算订单</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="order">
+            <ul class="top-info g-flex">
+                <li class="g-col">
+                    <i class="iconfont icon-dingdan"></i>待结算订单：2
+                </li>
+                <li class="g-col">
+                    <i class="iconfont icon-tixianjilu"></i>可得提成：¥1000.00
+                </li>
+            </ul>
+            <p class="tips">
+                提示：平台确认送达后将对应返还提成到您的账户。
+            </p>
+            <div class="g-row">
+                <div class="g-card">
+                    <div class="top clearfix">
+                        <div class="img-box">
+                            <img src="images/user/head.png" alt="">
+                        </div>
+                            <div class="font-box">
+                                <span class="name">权志龙</span>
+                                <a href="tel:1333333333"><img src="images/icon/tel.png" alt=""></a>
+                                <span class="fr">2018.10.16<br>16:30</span>
+                            </div>
+                        </div>
+                        <ul class="middle clearfix">
+                            <li><i class="iconfont icon-tixianjine"></i>订单金额：¥240.00</li>
+                            <li><i class="iconfont icon-dianlijingjiguanxi"></i>提成金额：¥60.00</li>
+                        </ul>
+                        <div class="bottom">
+                            <span class="f-orange">待收货</span>
+                            <a href=""><img src="images/wuliu.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="g-card">
+                        <div class="top clearfix">
+                            <div class="img-box">
+                                <img src="images/user/head.png" alt="">
+                        </div>
+                                <div class="font-box">
+                                    <span class="name">权志龙</span>
+                                    <a href="tel:1333333333"><img src="images/icon/tel.png" alt=""></a>
+                                    <span class="fr">2018.10.16<br>16:30</span>
+                                </div>
+                            </div>
+                            <ul class="middle clearfix">
+                                <li><i class="iconfont icon-tixianjine"></i>订单金额：¥240.00</li>
+                                <li><i class="iconfont icon-dianlijingjiguanxi"></i>提成金额：¥60.00</li>
+                            </ul>
+                            <div class="bottom">
+                                <span class="f-blue">待发货</span>
+                                <a href=""><img src="images/pingtai.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g-footer g-fixed">
+                <div class="g-col">
+                    <a href="" class="g-btn">返回</a>
+                </div>
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/swiper.min.js"></script>
+            <script src="js/index.js"></script>
+</body>
+
+</html>
