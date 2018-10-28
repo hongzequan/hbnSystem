@@ -195,6 +195,12 @@ a{display: inline-block;vertical-align: middle;}
 .incomeDetail ul.detail-ul2 li+li:before{display: none;}
 .incomeDetail ul.detail-ul2 li:last-child{border-bottom: 0;padding-bottom: 0;margin-bottom: 0;}
 
+.incomeDetail ul.detail-ul3{}
+.incomeDetail ul.detail-ul3 li{}
+.incomeDetail ul.detail-ul3 li .text-box{padding: 0 0 0 4rem; } 
+.incomeDetail ul.detail-ul3 li .text-box .fr{position: absolute; top: .5rem; right: 0; } 
+.incomeDetail ul.detail-ul3 li .text-box .info{top: 0;}
+
 
 /*开始赚钱*/
 .makeMoney{font-size: .65rem;}
@@ -304,10 +310,10 @@ a{display: inline-block;vertical-align: middle;}
 .g-bottom-toggle .product-list .font-box span{font-size: .52rem;line-height: 0.7rem;display: inline-block;color: #969696;background: #f4f4f4;padding: .2rem .4rem;border-radius: .5rem;}
 .x-row-center{-webkit-box-align: center; -ms-flex-align: center; -moz-align-items: center; align-items: center;} .x-row{    display: -webkit-box; display: -moz-flex; display: -ms-flexbox; display: flex; width: auto;}
 
-
-
  /*商品提货*/
 
+.g-img-detail{padding: .5rem;}
+.g-img-detail img{width: 100%;}
 
 
 /*超出1024的处理方式*/
