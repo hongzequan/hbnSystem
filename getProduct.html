@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>商品提货</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="getProduct">
+            <div class="g-big-banner">
+                <img src="images/userCenter_top.jpg" alt="">
+                <div class="font-box">
+                    <p>权志龙 <span class="ml15">13333333333</span></p>
+                    <div class="number">厦门软件园二期望海路15号楼之二603A</div>
+                </div>
+                <a href="">更改</a>
+            </div>
+            <div class="g-title">请选择您要提货的商品</div>
+            <div class="g-row">
+                <div class="g-card">
+                    <div class="img-box">
+                        <img src="images/product_1.png" alt="">
+                    </div>
+                    <div class="font-box">
+                        <h3>洗发水、高浓缩洗衣液组合</h3>
+                        <span class="num">1份</span>
+                        <p>采购价：<span class="f-red">¥48.00</span></p>
+                        <i class="iconfont icon-jiahao"></i>
+                    </div>
+                </div>
+                <div class="g-card">
+                    <div class="img-box">
+                        <img src="images/product_1.png" alt="">
+                    </div>
+                    <div class="font-box">
+                        <h3>洗发水、高浓缩洗衣液组合洗发水、高浓缩洗衣液组合</h3>
+                        <span class="num">1份</span>
+                        <p>采购价：<span class="f-red">¥48.00</span></p>
+                        <i class="iconfont icon-jiahao"></i>
+                    </div>
+                </div>
+                <div class="g-card">
+                    <div class="img-box">
+                        <img src="images/product_1.png" alt="">
+                    </div>
+                    <div class="font-box">
+                        <h3>洗发水、高浓缩洗衣液组合</h3>
+                        <span class="num">1份</span>
+                        <p>采购价：<span class="f-red">¥48.00</span></p>
+                        <i class="iconfont icon-jiahao"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-footer x-row-addgoods">
+        <div class="g-col" style="flex: 0.5">
+            <a href="/wx/member/index">返回</a>
+        </div>
+        <div class="g-col2 relative">
+            <div class="icon-menu" id="toggleList" onclick="showAddgoods();">
+                <i class="iconfont icon-shangpin"></i><span class="num" id="product_num">0</span>
+            </div>
+            <div class="font-box">
+                消耗卷数：<span class="f-red">-6</span>
+                <div class="f-small">提货券剩余：<span class="f-red">10</span></div>
+            </div>
+        </div>
+        <div class="g-col" style="flex: 1.25">
+            <a href="javaScript:submit();" class="g-btn">选好了</a>
+        </div>
+    </div>
+    <div class="g-bottom-toggle" id="g-bottom-toggle">
+        <div class="mask" style="display: block"></div>
+        <div class="g-view" id="view">
+            <i class="iconfont icon-guanbi close" onclick="showAddgoods();"></i>
+            <div class="title"><i class="iconfont icon-bimaiqingdan mr5"></i>商品清单
+                <span class="fr" onclick="removeProductList()"><i class="iconfont icon-lajitong mr5"></i>清空</span>
+            </div>
+            <ul class="product-list" id="product-list">
+                <li class="x-row x-row-center">
+                    <div class="font-box">
+                        <h3>好帮你洗衣液 </h3>
+                        <span>4公斤装</span>
+                    </div>
+                    <div class="right-fun">
+                        <i class="iconfont icon-jian" onclick="lessNum(this)"></i>
+                        <input type="number" value="1">
+                        <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                    </div>
+                </li>
+                <li class="x-row x-row-center">
+                    <div class="font-box">
+                        <h3>好帮你洗衣液 </h3>
+                        <span>4公斤装</span>
+                    </div>
+                    <div class="right-fun">
+                        <i class="iconfont icon-jian" onclick="lessNum(this)"></i>
+                        <input type="number" value="1">
+                        <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                    </div>
+                </li>
+                <li class="x-row x-row-center">
+                    <div class="font-box">
+                        <h3>好帮你洗衣液 </h3>
+                        <span>4公斤装</span>
+                    </div>
+                    <div class="right-fun">
+                        <i class="iconfont icon-jian" onclick="lessNum(this)"></i>
+                        <input type="number" value="1">
+                        <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

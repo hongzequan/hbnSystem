@@ -38,10 +38,52 @@ function clearVal(obj) {
 }
 // 查看密码
 function showPassword(obj) {
-    var input =$(obj).siblings('input')
-    if (input.attr("type") == "password"){
+    var input = $(obj).siblings('input')
+    if (input.attr("type") == "password") {
         input[0].type = "text"
-    } else{
+    } else {
         input[0].type = "password";
     }
+}
+
+// 抄以前的js
+// 展开清单
+function showAddgoods() {
+    var obj = $('#g-bottom-toggle'),
+        view = $('#view');
+    if (obj.hasClass('active')) {
+        obj.removeClass('active');
+        obj.fadeOut(300, function() {
+            view.css({ 'bottom': '-100%' })
+        });
+    } else {
+        obj.addClass('active');
+        obj.fadeIn(150, function() {
+            view.css({ 'bottom': 0 })
+        });
+    }
+}
+// 清空
+function removeProductList() {
+    $('#product-list').remove();
+    showAddgoods();
+}
+// 减少数量
+function lessNum(obj) {
+    var input = $(obj).siblings('input');
+    var value = $(obj).siblings('input').val();
+    value = parseInt(value) - 1;
+    if (value == 0) {
+        $(obj).closest('.g-row').fadeOut(function() {
+            $(this).remove();
+        });
+    }
+    input.val(value);
+}
+// 添加数量
+function addNum(obj) {
+    var input = $(obj).siblings('input');
+    var value = $(obj).siblings('input').val();
+    value = parseInt(value) + 1;
+    input.val(value);
 }
