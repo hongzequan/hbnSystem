@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>已结算订单</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="incomeDetail">
+            <div class="big-banner">
+                <img src="images/userCenter_top.jpg" alt="">
+                <div class="font-box">
+                    <p>收入总额：</p>
+                    <div class="number"><span>¥42420.00</span>（元）</div>
+                </div>
+                <a href="">收入明细</a>
+            </div>
+            <div class="g-low">
+                <div class="g-card">
+                    <div class="g-title">明细记录</div>
+                    <ul>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-footer g-fixed">
+        <div class="g-col">
+            <a href="" class="g-btn">返回</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
