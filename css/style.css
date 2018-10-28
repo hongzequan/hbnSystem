@@ -43,7 +43,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-btn-border{display: inline-block; vertical-align: middle; border: 1px solid #7d8dfe; color: #7d8dfe; padding: 0 1rem; line-height: 1.25rem; border-radius: 1rem; } 
 .g-row{margin:.5rem;}
 .g-low{margin:.5rem 0}
-.g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;}
+.g-title{position: relative;line-height: 1.5rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .75rem;padding-bottom: .5rem;}
 .g-title:before{content:'';position: absolute;display: block;top: .35rem;left: .5rem;width: 4px;height: .75rem;background: -webkit-linear-gradient(#8ca7ff, #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(#8ca7ff, #7569ff); /* 标准的语法 */}
 .g-top-fixed{background: #fff;padding: .25rem 0;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;}
 .g-top-fixed-row{padding-top: 2.5rem;margin-top: 0;}
@@ -205,8 +205,8 @@ a{display: inline-block;vertical-align: middle;}
 
 /*开始赚钱*/
 .makeMoney{font-size: .65rem;}
-.topLevel{background: #fff;padding: .4rem .5rem;position: fixed;left: 0;top: 0;width: 100%;z-index: 1;height: 3.25rem;} 
-.topLevel .img-box{width: 2.5rem; margin-right: .5rem; height: 2.5rem; overflow: hidden; } 
+.topLevel{background: #fff;padding: .4rem .5rem;position: absolute;left: 0;top: 0;width: 100%;z-index: 1;height: 3.25rem;} 
+.topLevel .img-box{width: 2.5rem;margin-right: .5rem;height: 2.5rem;overflow: hidden;border-radius: 100%;} 
 .topLevel .img-box img{width: 100%;} 
 .topLevel .font-box{float: left;font-size: .8rem;height: 2.5rem;line-height: 2.5rem;} 
 .topLevel .fr{position: absolute;right: .5rem;top: 1.15rem;} 
@@ -351,7 +351,20 @@ a{display: inline-block;vertical-align: middle;}
 
   /*销售奖励*/
  /*没数据展示*/
-.g-no-data{width: 12rem; text-align: center; margin: 0 auto; padding: 1rem; } .g-no-data img{width: 6rem; } .g-no-data p{font-size: .8rem; margin: 1rem 0; }
+.g-no-data{width: 12rem;text-align: center;margin: 0 auto;padding: 1rem .5rem;} .g-no-data img{width: 6rem; } .g-no-data p{font-size: .8rem; margin: 1rem 0; }
+
+/*我的团队*/
+.teamIncome{font-size: .65rem;}
+.teamIncome .g-top-fixed-row{padding-top: 3.25rem}
+.teamIncome .g-title .g-btn-border{padding: 0 .5rem; border-radius: .5rem .5rem 0 .5rem; } .teamIncome .g-title .g-btn{display: inline-block; padding: 0 .5rem; width: auto; line-height: 1.5rem; height: 1.5rem; border-radius: .5rem .5rem 0 .5rem; }
+.teamIncome .g-card ul{padding: .5rem; } 
+.teamIncome .g-card ul li{border-bottom: 1px solid #eee; margin-bottom: .5rem; padding-bottom: .5rem; } 
+.teamIncome .g-card ul li:last-child{border-bottom: 0;margin-bottom: 0;padding-bottom: 0;}
+.teamIncome .g-card ul li a{display: block;} 
+.teamIncome .g-card ul li .img-box{float: left; width: 4rem; margin-right: .5rem; height: 4rem; } 
+.teamIncome .g-card ul li .img-box img{width: 100%;} 
+.teamIncome .g-card ul li .font-box{overflow: hidden; height: 4rem; line-height: 4rem; } 
+.teamIncome .g-card ul li .font-box span{float: right; }
 
 
 
