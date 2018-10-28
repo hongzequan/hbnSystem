@@ -349,11 +349,13 @@ a{display: inline-block;vertical-align: middle;}
 .g-record ul li+li:before{content: '';display: block;position: absolute;left: 3rem;top: -1.5rem;width: 1px;height: 100%;background: #ebebeb;}
 .g-record ul li:last-child{margin-bottom: 0}
 
-
-
-
-
   /*销售奖励*/
+ /*没数据展示*/
+.g-no-data{width: 12rem; text-align: center; margin: 0 auto; padding: 1rem; } .g-no-data img{width: 6rem; } .g-no-data p{font-size: .8rem; margin: 1rem 0; }
+
+
+
+
 
 
 /*超出1024的处理方式*/
