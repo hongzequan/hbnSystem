@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>销售奖励</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="salesAward">
+            <div class="g-big-banner">
+                <img src="images/userCenter_top.jpg" alt="">
+                <div class="font-box">
+                    <div class="data">
+                        2018年10月
+                    </div>
+                    <p>本月销量（份）：395</p>
+                    <p>已得奖励（元）：¥1300.00</p>
+
+                </div>
+                <a href="">收入明细</a>
+            </div>
+            <div class="g-low">
+                <div class="g-tips">
+                    奖励提示：继续销售<i class="f-red">5份</i>，可获得奖励<i class="f-red">¥600.00</i>；
+                </div>
+                <div class="g-card g-record">
+                    <div class="g-title">奖励明细 <span class="f-red fr">奖励自动发放到提现余额中</span></div>
+                    <ul>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fl time">
+                                <p>10-28</p>
+                                <span>16:30</span>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">销量：300瓶</span>
+                                <span class="fr f-green">
+                                    +500.00
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-footer g-fixed">
+        <div class="g-col">
+            <a href="">返回</a>
+        </div>
+        <div class="g-col2 g-two-btn-box">
+            <a href=""  class="g-btn">查看余额</a>
+            <a href=""  class="g-btn">继续拿奖励</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
