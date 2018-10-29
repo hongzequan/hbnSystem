@@ -126,12 +126,16 @@ a{display: inline-block;vertical-align: middle;}
 
 .sys-footer{font-size: 12px;}
 .sys-footer .g-col.active a{color: #5577fe;}
-.sys-footer .img-icon{display: block;margin: 0 auto;width: 1.5rem;height: 1.4rem;background: url('../images/icon/icon-footer.png') no-repeat;background-size: 5.5rem;}
+.sys-footer .img-icon{display: block;margin: 0 auto;width: 1.5rem;height: 1.4rem;background: url('../images/icon/icon-footer.png') no-repeat;background-size: 6rem;background-position: 0 -1.5rem;}
 .sys-footer a{ padding: 0;}
 .sys-footer .img-icon.sr{}
-.sys-footer .img-icon.sc{background-position: -1.3rem 0;}
-.sys-footer .img-icon.gk{background-position: -2.5rem 0;}
-.sys-footer .img-icon.user{background-position: -3.8rem 0;}
+.sys-footer .img-icon.sc{background-position: -1.5rem -1.5rem;}
+.sys-footer .img-icon.gk{background-position: -3rem -1.5rem;}
+.sys-footer .img-icon.user{background-position: -4.5rem -1.5rem;}
+.sys-footer .g-col.active .img-icon.sr{background-position: 0 0;}
+.sys-footer .g-col.active .img-icon.sc{background-position: -1.5rem 0;}
+.sys-footer .g-col.active .img-icon.gk{background-position: -3rem 0;}
+.sys-footer .g-col.active .img-icon.user{background-position: -4.5rem 0;}
 .sys-footer .start a{background: #5a7af6;color: #fff;border-radius: 100%;width: 2.25rem;height: 2.25rem;margin: 0 auto;text-align: center;padding: .2rem 0;font-size: .6rem;box-shadow: inset 0 0 6px 0px rgba(0, 0, 0, 0.6);}
 
 /*用户中心*/
@@ -141,7 +145,7 @@ a{display: inline-block;vertical-align: middle;}
 
 .sharePage{font-size: .65rem;}
 .sharePage .user-info{border-bottom: 1px solid #ddd; margin-bottom: .5rem; padding-bottom: .5rem; } 
-.sharePage .user-info .img-box{float: left; width: 3rem; margin-right: .5rem; }
+.sharePage .user-info .img-box{float: left;width: 3rem;margin-right: .5rem;height: 3rem;border-radius: 100%;overflow: hidden;}
 .sharePage .user-info .img-box img{width: 100%;pointer-events: initial;} 
 .sharePage .user-info .font-box{overflow: hidden; padding-right: 5rem; } 
 .sharePage .user-info .font-box p{margin-top: .5rem; } 
@@ -358,7 +362,7 @@ a{display: inline-block;vertical-align: middle;}
 .teamIncome{font-size: .65rem;}
 .teamIncome .g-top-fixed-row{padding-top: 3.25rem}
 .teamIncome .g-title{padding-bottom: .5rem;}
-.teamIncome .g-title .g-btn-border{padding: 0 .5rem; border-radius: .5rem .5rem 0 .5rem; } .teamIncome .g-title .g-btn{display: inline-block; padding: 0 .5rem; width: auto; line-height: 1.5rem; height: 1.5rem; border-radius: .5rem .5rem 0 .5rem; }
+.teamIncome .g-title .g-btn-border{padding: 0 .5rem;border-radius: .5rem .5rem 0 .5rem;height: 1.25rem;vertical-align: middle;} .teamIncome .g-title .g-btn{display: inline-block;padding: 0 .5rem;width: auto;line-height: 1.25rem;height: 1.25rem;border-radius: .5rem .5rem 0 .5rem;border: 1px solid #7d8dfe;vertical-align: middle;}
 .teamIncome .g-card ul{padding: .5rem; } 
 .teamIncome .g-card ul li{border-bottom: 1px solid #eee; margin-bottom: .5rem; padding-bottom: .5rem; } 
 .teamIncome .g-card ul li:last-child{border-bottom: 0;margin-bottom: 0;padding-bottom: 0;}
