@@ -237,9 +237,12 @@ a{display: inline-block;vertical-align: middle;}
 
 /*邀请加盟*/
 .joinBg{background: url('../images/joinBg.jpg');background-size: cover;}
+.join{position: relative;}
 .join .join-icon{width: 100%;padding-top: 4rem;}
 .join .video-box{position: absolute;top: 13rem;left: 3.9rem;}
 .join .video-box video{width: 8.2rem;background: #000;display: block;}
+.join .qr-box{position: absolute; top: 15.5rem; left: 0; right: 0; text-align: center; } 
+.join .qr-box img{width: 7rem;} 
 /*邀请加盟*/
 /*加盟注册*/
 .joinRegister{font-size: .65rem;}
