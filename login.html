@@ -32,7 +32,7 @@
     })(document, window);
     </script>
 </head>
-<body>
+<body id="login">
 	<!-- 所有的页面都写在这个class底下 -->
 	<div class="wrap">
 		<div class="login">
@@ -65,6 +65,9 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/index.js"></script>
+	<script>
+		$('.wrap').height($('body').height())
+	</script>
 </body>
 </html>
 
