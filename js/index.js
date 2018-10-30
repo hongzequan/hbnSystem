@@ -87,3 +87,17 @@ function addNum(obj) {
     value = parseInt(value) + 1;
     input.val(value);
 }
+
+// 监听键盘弹出收起事件
+var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+$(window).on('resize', function (e) {
+    var nowClientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+    if (clientHeight > nowClientHeight) {
+        //键盘弹出的事件处理
+        $('.login .bottom-img-box').hide();
+    }
+    else {
+        //键盘收起的事件处理
+        $('.login .bottom-img-box').show();
+    } 
+});
