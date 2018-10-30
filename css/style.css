@@ -258,11 +258,11 @@ a{display: inline-block;vertical-align: middle;}
 .joinRegister .top-img-box p{font-size: 1.25rem;}
 .joinRegister .top-img-box span{font-size: .75rem;}
 .join-form{}
-.join-form strong{float: left;}
+.join-form strong{float: left;width: 3.5rem;text-align: right;text-align-last: justify;}
 .join-form .input-box{overflow: hidden;position: relative;}
 .join-form .input-box input{width: 100%;padding-right: 1.25rem;font-size: .65rem;}
 .join-form .input-box .right{position: absolute; right: 0; top: 0;} 
-.join-form .input-box i.right{color:#a0a1a6;font-size: .9rem;}
+.join-form .input-box i.right{color:#a0a1a6;font-size: .75rem;}
 .joinRegister .submit-box{text-align: center;padding-top: 8rem;} 
 .joinRegister .submit-box p{margin-bottom: .5rem; } 
 .joinRegister .submit-box input{width: 80%; }
