@@ -90,16 +90,43 @@ function addNum(obj) {
 
 // 监听键盘弹出收起事件
 var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
-$(window).on('resize', function (e) {
+$(window).on('resize', function(e) {
     var nowClientHeight = document.documentElement.clientHeight || document.body.clientHeight;
     if (clientHeight > nowClientHeight) {
         //键盘弹出的事件处理
         $('.login .bottom-img-box').hide();
         $('.joinRegister .submit-box').hide();
-    }
-    else {
+    } else {
         //键盘收起的事件处理
         $('.login .bottom-img-box').show();
         $('.joinRegister .submit-box').show();
-    } 
+    }
 });
+
+
+var bigBannerSwiper;
+$('.sharePage .img-info img').click(function(e) {
+    bigBannerSwiper = new Swiper('.big-banner-swiper', {
+            spaceBetween: 15,
+            observer: true,
+            observerParents: true,
+            pagination: '.bigGallery .swiper-pagination',
+            paginationType: 'fraction',
+            onSlideChangeEnd: function(swiper){ 
+                swiper.update(); //swiper更新
+            }  
+        })
+    var index = $(this).index();
+    var imgArr=$(this).parent().find('img');
+    for (var i = imgArr.length - 1; i >= 0; i--) {
+        bigBannerSwiper.appendSlide('<div class="swiper-slide"><img src='+$(imgArr[i]).attr('src')+'></div>')
+    }
+    bigBannerSwiper.slideTo(index, 0, false);
+    $('.bigGallery').show();
+})
+$('.bigGallery').click(function() {
+    $('.bigGallery').hide();
+    bigBannerSwiper.removeAllSlides();
+})
+
+
