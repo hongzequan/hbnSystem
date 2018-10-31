@@ -266,11 +266,12 @@ a{display: inline-block;vertical-align: middle;}
 .join-form{}
 .join-form strong{float: left;width: 3.5rem;text-align: right;text-align-last: justify;}
 .join-form .input-box{overflow: hidden;position: relative;}
-.join-form .input-box select{width: 100%;font-size: .65rem;height: 1rem;border: 0;margin: 0;padding: 0;background: transparent;}
+.join-form .input-box select{width: 100%;font-size: .65rem;height: 1rem;border: 0;margin: 0;padding: 0;background: transparent;padding-right: 1.25rem;}
 .join-form .input-box select:focus{outline: none;}
-.join-form .input-box input{width: 100%;padding-right: 1.25rem;font-size: .65rem;height: 1rem;}
-.join-form .input-box .right{position: absolute; right: 0; top: 0;} 
+.join-form .input-box input,select{width: 100%;padding-right: 1.25rem;font-size: .65rem;height: 1rem;}
+.join-form .input-box .right{position: absolute;right: 0;top: 0;width: 20px;height: 20px;line-height: 20px;text-align: center;} 
 .join-form .input-box i.right{color:#a0a1a6;font-size: .75rem;}
+.join-form .input-box .f-blue{width: auto;}
 .joinRegister .submit-box{text-align: center;position: fixed;bottom: .5rem;left: 0;width: 100%;} 
 .joinRegister .submit-box p{margin-bottom: .5rem; } 
 .joinRegister .submit-box input{width: 80%; }
