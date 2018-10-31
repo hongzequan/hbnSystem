@@ -95,9 +95,11 @@ $(window).on('resize', function (e) {
     if (clientHeight > nowClientHeight) {
         //键盘弹出的事件处理
         $('.login .bottom-img-box').hide();
+        $('.joinRegister .submit-box').hide();
     }
     else {
         //键盘收起的事件处理
         $('.login .bottom-img-box').show();
+        $('.joinRegister .submit-box').show();
     } 
 });
