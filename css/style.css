@@ -52,6 +52,9 @@ a{display: inline-block;vertical-align: middle;}
 .g-title2{text-align: center;position: relative;margin-bottom: .5rem;font-size: .8rem;} 
 .g-title2:before {content: '';display: block;position: absolute;left: 50%;top: .5rem;width: 80%;height: 2px;background: #d8d8d8;margin-left: -40%;} 
 .g-title2 span{background: #fff;display: inline-block;position: relative;z-index: 1;padding: 0 .5rem;} 
+
+.g-title .fr{position: absolute; right: 0; top: 0; height: 1.75rem; display: flex; align-items: center; justify-content: center;} 
+.g-title .fr .g-btn{margin-left: .25rem;}
 /*公用模块*/
 /*登录页面*/
 #login{padding-bottom: 5rem;}
@@ -110,6 +113,15 @@ a{display: inline-block;vertical-align: middle;}
 .g-style1 .font-box strong{font-size: .8rem;}
 .g-style1 .href{border-top: 1px solid #eee; padding-top: .5rem; margin-top: .5rem; line-height: 1.5rem; }
 
+.g-style2{font-size: .7rem;text-align: center;padding: 1rem .5rem;}
+.g-style2 ul{display: flex;}
+.g-style2 ul li{flex: 1;}
+.g-style2 ul li a{display: block;}
+.g-style2 ul li a img{display: block;width: 4rem;margin: 0 auto .5rem;}
+.g-style2 ul li a p{color: #69c6f2;}
+.g-style2 ul li a span{}
+
+
 /*微客提升*/
 .levelUp-task{font-size: .65rem;} .levelUp-task .state{position: relative;background: #fff;padding: .5rem .5rem 0;} .levelUp-task .border{border-bottom: 1px solid #d9d9d9;padding-bottom: .5rem;} .levelUp-task .task .fr{position: absolute;top: .5rem;right: 0;} .levelUp-task .row{/* border: 1px solid #d9d9d9; */ background: #fff; padding: .5rem 0; } .levelUp-task .row ul{border: 1px solid #d9d9d9; margin: 0 .5rem; border-radius: 6px; padding: .5rem; position: relative; } .levelUp-task .row ul li{margin-top: .5rem;} .levelUp-task .row ul li:first-child{margin-top:0;} .levelUp-task .row ul li:after{content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .levelUp-task .row ul li .img-box{float: left;margin-right: .5rem;width: 4rem;} .levelUp-task .row ul li .img-box img{width: 100%;} .levelUp-task .row ul li .font-box{font-size: .6rem;overflow: hidden;height: 4rem;display: table-cell;vertical-align: middle;} .levelUp-task .row ul span{position: absolute; top: 50%; margin-top: -.5rem; left: 65%; } .levelUp-task .g-row img{width: 100%;}
 .levelUp-manager{} .levelUp-manager h3{text-align: center; line-height: 1.5rem; } .levelUp-manager p{font-size: 12px; } .levelUp-manager ul{} .levelUp-manager ul li{margin-bottom: .5rem; } .levelUp-manager ul li .g-card{padding: .75rem .5rem;} .levelUp-manager ul li .g-card .top{/* padding-bottom: .5rem; */} .levelUp-manager ul li .g-card .font-box{display: inline-block;width: 70%;vertical-align: top;height: 2.25rem;} .levelUp-manager ul li .g-card .g-btn-border{vertical-align: top;float: right;}.levelUp-manager ul li .g-card .g-btn-border.f-red{font-size: .6rem;padding: 0 .5rem;} .levelUp-manager ul li .g-card .btn{position: absolute;right: -.15rem;bottom: .5rem;width: 5rem;}
@@ -160,9 +172,10 @@ a{display: inline-block;vertical-align: middle;}
 
 /*公用弹窗*/
 .modal{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; display: none; overflow: hidden; -webkit-overflow-scrolling: touch; outline: 0;} 
-.fade.in{opacity: 1;} .modal-dialog{position: relative;width: auto;margin: 20% .5rem .5rem .5rem;z-index: 11;} 
-.modal.fade .modal-dialog{-webkit-transition: -webkit-transform .3s ease-out; -o-transition: -o-transform .3s ease-out; transition: transform .3s ease-out; -webkit-transform: translate(0,-25%); -ms-transform: translate(0,-25%); -o-transform: translate(0,-25%); transform: translate(0,-25%);} 
-.modal.in .modal-dialog{-webkit-transform: translate(0,0); -ms-transform: translate(0,0); -o-transform: translate(0,0); transform: translate(0,0);} 
+.fade.in{opacity: 1;} 
+.modal.fade .modal-dialog{-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0,-25%);-ms-transform: translate(0,-25%);-o-transform: translate(0,-25%);transform: translate(0,-25%);} 
+.modal.in .modal-dialog{-webkit-transform: translate(0,0);-ms-transform: translate(0,0);-o-transform: translate(0,0);transform: translate(0,-50%);} 
+.modal-dialog{position: absolute;left: .5rem;right: .5rem;top: 50%;width: auto;z-index: 11;transform: translateY(-50%);} 
 .modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;background-color: #000;} 
 .modal-backdrop.fade{filter: alpha(opacity=0); opacity: 0;}
 .modal-backdrop.in{filter: alpha(opacity=50);opacity: .7;} 
@@ -380,7 +393,7 @@ a{display: inline-block;vertical-align: middle;}
 
   /*销售奖励*/
  /*没数据展示*/
-.g-no-data{width: 12rem;text-align: center;margin: 0 auto;padding: 1rem .5rem;} .g-no-data img{width: 6rem; } .g-no-data p{font-size: .8rem; margin: 1rem 0; }
+.g-no-data{width: 12rem;text-align: center;margin: 0 auto;padding: 1rem .5rem;} .g-no-data img{width: 6rem; } .g-no-data p{font-size: .7rem; margin: 1rem 0; }
 
 /*我的团队*/
 .teamIncome{font-size: .65rem;}
