@@ -167,7 +167,7 @@ a{display: inline-block;vertical-align: middle;}
 .sharePage .user-info .g-btn{position: absolute;right: .5rem;top: .75rem;width: 5rem;line-height: 1.25rem;height: 1.25rem;font-size: .6rem;}
 .sharePage .text-info{padding-left: 2rem;margin-bottom: .5rem;font-size: .6rem;} 
 .sharePage .img-info{padding-left: 2rem;}
-.sharePage .img-info img{margin-bottom: .5rem;margin-right: .5rem;pointer-events: inherit;}
+.sharePage .img-info img{margin-bottom: .5rem;margin-right: .5rem;pointer-events: inherit;width: 3.5rem;}
 
 
 /*公用弹窗*/
