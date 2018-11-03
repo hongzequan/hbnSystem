@@ -133,6 +133,7 @@ var bannerSwiper;
 bannerSwiper = new Swiper('.banner .swiper-container', {
     loop:true,
     autoplay : 5000,
+    autoplayDisableOnInteraction : false,
     spaceBetween: 10,
 })
 
