@@ -478,6 +478,7 @@ a{display: inline-block;vertical-align: middle;}
 }
 
 @media (max-width: 320px){
+	#platformJoining{overflow-x:hidden;}
 	#platformJoining .four img{max-width: inherit;width: 17rem;margin-left: -.75rem;} 
 	#platformJoining .four .top{top: 4.25rem; } 
 	#platformJoining .four .product-item{width: 13rem; top: 8rem; } 
