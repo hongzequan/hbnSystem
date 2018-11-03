@@ -399,7 +399,7 @@ a{display: inline-block;vertical-align: middle;}
 .teamIncome{font-size: .65rem;}
 .teamIncome .g-card{padding:0 .5rem;}
 .teamIncome .g-top-fixed-row{padding-top: 3.25rem}
-.teamIncome .g-title .g-btn-border{padding: 0 .5rem;border-radius: .5rem .5rem 0 .5rem;height: 1.1rem;line-height: 1.1rem;vertical-align: middle;font-size: .6rem;} .teamIncome .g-title .g-btn{display: inline-block;padding: 0 .5rem;width: auto;line-height: 1.1rem;height: 1.1rem;border-radius: .5rem .5rem 0 .5rem;border: 1px solid #7d8dfe;vertical-align: middle;font-size: .6rem;}
+.teamIncome .g-title .g-btn-border{padding: 0 .5rem;border-radius: .5rem .5rem 0 .5rem;height: 1.1rem;line-height: 1.1rem;vertical-align: middle;font-size: .6rem;} .teamIncome .g-title .g-btn{display: inline-block;padding: 0 .5rem;width: auto;line-height: 1.1rem;height: 1.1rem;border-radius: .5rem .5rem 0 .5rem;border: 1px solid #ea9ea9;vertical-align: middle;font-size: .6rem;}
 .teamIncome .g-card ul{padding: .5rem; } 
 .teamIncome .g-card ul li{border-bottom: 1px solid #eee; margin-bottom: .5rem; padding-bottom: .5rem; } 
 .teamIncome .g-card ul li:last-child{border-bottom: 0;margin-bottom: 0;padding-bottom: 0;}
