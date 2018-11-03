@@ -129,4 +129,11 @@ $('.bigGallery').click(function() {
     bigBannerSwiper.removeAllSlides();
 })
 
+var bannerSwiper;
+bannerSwiper = new Swiper('.banner .swiper-container', {
+    loop:true,
+    autoplay : 5000,
+    spaceBetween: 10,
+})
+
 
