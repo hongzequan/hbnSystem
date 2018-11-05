@@ -121,8 +121,16 @@ a{display: inline-block;vertical-align: middle;}
 .g-style2 ul li a p{color: #69c6f2;}
 .g-style2 ul li a span{}
 
+.g-style3{font-size: .6rem; padding: 1rem .5rem; text-align: center; } 
+.g-style3 h3{font-weight: bold; } 
+.g-style3 .img-box{margin: .5rem 0; } 
+.g-style3 .img-box img{width: 8rem; } 
+.g-style3 .font-box{text-align: left; } 
+.g-style3 .font-box p{padding: 0 1rem; margin-bottom: .25rem; } /*微客提升*/
 
-/*微客提升*/
+
+
+
 .levelUp-task{font-size: .65rem;} .levelUp-task .state{position: relative;background: #fff;padding: .5rem .5rem 0;} .levelUp-task .border{border-bottom: 1px solid #d9d9d9;padding-bottom: .5rem;} .levelUp-task .task .fr{position: absolute;top: .5rem;right: 0;} .levelUp-task .row{/* border: 1px solid #d9d9d9; */ background: #fff; padding: .5rem 0; } .levelUp-task .row ul{border: 1px solid #d9d9d9; margin: 0 .5rem; border-radius: 6px; padding: .5rem; position: relative; } .levelUp-task .row ul li{margin-top: .5rem;} .levelUp-task .row ul li:first-child{margin-top:0;} .levelUp-task .row ul li:after{content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .levelUp-task .row ul li .img-box{float: left;margin-right: .5rem;width: 4rem;} .levelUp-task .row ul li .img-box img{width: 100%;} .levelUp-task .row ul li .font-box{font-size: .6rem;overflow: hidden;height: 4rem;display: table-cell;vertical-align: middle;} .levelUp-task .row ul span{position: absolute; top: 50%; margin-top: -.5rem; left: 65%; } .levelUp-task .g-row img{width: 100%;}
 .levelUp-manager{} .levelUp-manager h3{text-align: center; line-height: 1.5rem; } .levelUp-manager p{font-size: 12px; } .levelUp-manager ul{} .levelUp-manager ul li{margin-bottom: .5rem; } .levelUp-manager ul li .g-card{padding: .75rem .5rem;} .levelUp-manager ul li .g-card .top{/* padding-bottom: .5rem; */} .levelUp-manager ul li .g-card .font-box{display: inline-block;width: 70%;vertical-align: top;height: 2.25rem;} .levelUp-manager ul li .g-card .g-btn-border{vertical-align: top;float: right;}.levelUp-manager ul li .g-card .g-btn-border.f-red{font-size: .6rem;padding: 0 .5rem;} .levelUp-manager ul li .g-card .btn{position: absolute;right: -.15rem;bottom: .5rem;width: 5rem;}
 /*等级提升*/
@@ -399,7 +407,7 @@ a{display: inline-block;vertical-align: middle;}
 .teamIncome{font-size: .65rem;}
 .teamIncome .g-card{padding:0 .5rem;}
 .teamIncome .g-top-fixed-row{padding-top: 3.25rem}
-.teamIncome .g-title .g-btn-border{padding: 0 .5rem;border-radius: .5rem .5rem 0 .5rem;height: 1.1rem;line-height: 1.1rem;vertical-align: middle;font-size: .6rem;} .teamIncome .g-title .g-btn{display: inline-block;padding: 0 .5rem;width: auto;line-height: 1.1rem;height: 1.1rem;border-radius: .5rem .5rem 0 .5rem;border: 1px solid #ea9ea9;vertical-align: middle;font-size: .6rem;}
+.teamIncome .g-title .g-btn-border{padding: 0 .5rem;border-radius: .5rem .5rem 0 .5rem;height: 1.1rem;line-height: 1rem;vertical-align: middle;font-size: .6rem;} .teamIncome .g-title .g-btn{display: inline-block;padding: 0 .5rem;width: auto;line-height: 1rem;height: 1.1rem;border-radius: .5rem .5rem 0 .5rem;border: 1px solid #ea9ea9;vertical-align: middle;font-size: .6rem;}
 .teamIncome .g-card ul{padding: .5rem; } 
 .teamIncome .g-card ul li{border-bottom: 1px solid #eee; margin-bottom: .5rem; padding-bottom: .5rem; } 
 .teamIncome .g-card ul li:last-child{border-bottom: 0;margin-bottom: 0;padding-bottom: 0;}
@@ -471,6 +479,12 @@ a{display: inline-block;vertical-align: middle;}
 #platformJoining .five ul li .font-box p{color: #46464e; padding-left: 0.5rem; } 
 #platformJoining .five ul li .font-box p span{background-image: -webkit-linear-gradient(left, #d4a93f, #fff8b5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #fdee8f;-webkit-text-stroke: .5px #efbf7b;margin: 0 2px;} /*平台致富*/
 
+.clickMe{position: fixed; right: 0; width: 3rem; bottom: 3rem; }
+
+
+
+
+
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){
@@ -483,7 +497,8 @@ a{display: inline-block;vertical-align: middle;}
 	#platformJoining .four .top{top: 4.25rem; } 
 	#platformJoining .four .product-item{width: 13rem; top: 8rem; } 
 	#platformJoining .five ul li .img-box .bg{height: 6.25rem;} 
-	#platformJoining .five ul li .img-box .book{top: 2.5rem; } }
+	#platformJoining .five ul li .img-box .book{top: 2.5rem; } 
+}
 
 
 
