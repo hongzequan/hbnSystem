@@ -148,7 +148,7 @@ a{display: inline-block;vertical-align: middle;}
 
 .sys-footer{font-size: 12px;}
 .sys-footer .g-col.active a{color: #835fa1;}
-.sys-footer .img-icon{display: block;margin: 0 auto;width: 1.5rem;height: 1.4rem;background: url('../images/icon/icon-footer.png?v=1') no-repeat;background-size: 6rem;}
+.sys-footer .img-icon{display: block;margin: 0 auto;width: 1.5rem;height: 1.4rem;background: url('../images/icon/icon-footer_1.png?v=2') no-repeat;background-size: 6rem;}
 .sys-footer .g-col a{padding: 0;font-size: .6rem}
 .sys-footer .img-icon.sr{background-position-x:0;background-position-y:-1.5rem;}
 .sys-footer .img-icon.sc{background-position-x:-1.5rem;background-position-y:-1.5rem;}
