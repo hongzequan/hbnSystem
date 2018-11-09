@@ -28,7 +28,9 @@ a{display: inline-block;vertical-align: middle;}
 /*公用底部*/
 .g-footer{position: fixed;left: 0;bottom: 0;width: 100%;-webkit-box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);height: 2.5rem;display: flex;padding: 0 .5rem;align-items: center;justify-content: center;text-align: center;font-size: .7rem;background: #fff;z-index: 1;}
 .g-footer .g-col a{display: block;margin:0 auto;}
-.g-two-btn-box .g-btn{width: 50%; float: left; border-radius: 1rem 0 0 1rem; background: #7b87fd; } .g-two-btn-box .g-btn+.g-btn{border-radius: 0 1rem 1rem 0; background: #6d6cfc; } .g-flex{display: flex;align-content: center;justify-content: center;}
+.g-two-btn-box .g-btn{width: 50%; float: left; border-radius: 1rem 0 0 1rem; font-size: .6rem; background: #aa7ca5;} 
+.g-two-btn-box .g-btn+.g-btn{border-radius: 0 1rem 1rem 0; background: -webkit-linear-gradient(left, #7757a0 , #ebabac); background: -o-linear-gradient(right, #7757a0, #ebabac); background: -moz-linear-gradient(right, #7757a0, #ebabac); background: linear-gradient(to right, #7757a0 , #ebabac);} 
+.g-flex{display: flex;align-content: center;justify-content: center;}
 .g-col{-webkit-box-flex: 1;-moz-flex: 1;-ms-flex: 1;flex: 1;display: block;width: 100%;}
 .g-col2{-webkit-box-flex:2;-moz-flex: 2;-ms-flex: 2;flex: 2;display: block;width: 100%;}
 /*阴影*/
@@ -38,7 +40,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-card{padding: .5rem;position: relative;border-radius: 6px;background: #fff;box-shadow: 0.125rem 0.216506rem 0.6rem rgba(51, 51, 51, 0.1);}
 .g-card+.g-card{margin-top: .5rem;}
 /*渐变色的按钮-主要*/
-.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #7757a0 , #ebabac); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #7757a0, #ebabac); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #7757a0, #ebabac); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #7757a0 , #ebabac); /* 标准的语法 */border-radius: 1rem;font-size: .7rem;text-align: center;letter-spacing: .25rem;}
+.g-btn{color: #fff;width: 100%;height: 2rem;line-height: 2rem;background: -webkit-linear-gradient(left, #7757a0 , #ebabac); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #7757a0, #ebabac); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #7757a0, #ebabac); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #7757a0 , #ebabac); /* 标准的语法 */border-radius: 1rem;font-size: .7rem;text-align: center;letter-spacing: .1rem;}
 /*边框型按钮*/
 .g-btn-border{display: inline-block;vertical-align: middle;border: 1px solid #853fa1;color: #853fa1;padding: 0 1rem;line-height: 1.25rem;border-radius: 1rem;} 
 .g-row{margin:.5rem;}
