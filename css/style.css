@@ -65,13 +65,13 @@ a{display: inline-block;vertical-align: middle;}
 .login .top-img-box p{font-size: 1.25rem;}
 .login .top-img-box span{font-size: .75rem;}
 
-.login .bottom-img-box{position: fixed;left: 0;bottom: 0;width: 100%;height: 5rem;}
+.login .bottom-img-box{position: fixed;left: 0;bottom: 0;width: 100%;height: 8rem;}
 .login .bottom-img-box img{width: 100%;}
 .login .bottom-img-box a{box-sizing: border-box;position: absolute;right: .5rem;bottom: .4rem;background: #fff;border-radius: 100%;width: 3rem;height: 3rem;line-height: 3rem;font-size: 1.5rem;text-align: center;color: #ec3b3b;}
 
 .form-login{display: block; margin: 1rem; }
 .form-login .form-control{height: 2rem; border-bottom: 1px solid #ddd; width: 100%; font-size: .75rem;color: #666; } 
-.form-btn-login{color: #fff;width: 100%;height: 2rem;background: -webkit-linear-gradient(left, #8ca7ff , #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #8ca7ff , #7569ff); /* 标准的语法 */border-radius: 1rem;font-size: .75rem;margin-bottom: .5rem;}
+.form-btn-login{color: #fff;width: 100%;height: 2rem;background: -webkit-linear-gradient(left, #7757a0 , #ebabac); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #7757a0, #ebabac); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #7757a0, #ebabac); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #7757a0 , #ebabac); /* 标准的语法 */border-radius: 1rem;font-size: .75rem;margin-bottom: .5rem;}
 .form-submit-box{margin: 1rem;}
 .form-submit-box .f-black{font-size: .7rem;}
 /*登录页面*/
@@ -448,7 +448,8 @@ a{display: inline-block;vertical-align: middle;}
 #platformJoining .three img{width: 100%;} 
 #platformJoining .three .font-box{position: absolute; top: 4.75rem; left: 2rem; text-align: left; color: #46464e; } 
 #platformJoining .three .font-box p{} 
-#platformJoining .three .font-box span{margin-left: .25rem;background-image: -webkit-linear-gradient(left, #d4a93f, #fff8b5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #fdee8f;}
+#platformJoining .three .font-box span{margin-left: .25rem;}
+#platformJoining .three .font-box span img{width: 5rem;vertical-align: middle;}
 #platformJoining .four{position: relative; } 
 #platformJoining .four img{width: 100%;}
 #platformJoining .four .top{position: absolute;top: 3.75rem;left: 4.75rem;font-size: 0.5rem;color: #e55523;border: 1px solid #e55523;border-radius: 1rem;padding: 0 .5rem;}
@@ -474,15 +475,15 @@ a{display: inline-block;vertical-align: middle;}
 #platformJoining .five ul li .img-box{position: relative; } 
 #platformJoining .five ul li .img-box .book{position: absolute; left: -1rem; top: 1.75rem; width: 2rem; } 
 #platformJoining .five ul li .img-box .bg{width: 100%;} 
-#platformJoining .five ul li .img-box .get{position: absolute; bottom: -.5rem; width: 4rem; left: 3rem; } 
+#platformJoining .five ul li .img-box .get{position: absolute; bottom: -.5rem; width: 4rem; left: 4rem; } 
 #platformJoining .five ul li .font-box{position: absolute;top: 2rem;left: 1.25rem;font-size: .475rem;z-index: 1;text-align: left;width: 12rem;} 
 #platformJoining .five ul li .font-box h3{font-weight: bold; } 
 #platformJoining .five ul li .font-box p{color: #46464e; padding-left: 0.5rem; } 
-#platformJoining .five ul li .font-box p span{background-image: -webkit-linear-gradient(left, #d4a93f, #fff8b5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #fdee8f;-webkit-text-stroke: .5px #efbf7b;margin: 0 2px;} /*平台致富*/
+#platformJoining .five ul li .font-box p span{margin: 0 2px;} /*平台致富*/
+#platformJoining .five ul li .font-box p span img{width: 2.25rem;}
 
 .clickMe{position: fixed; right: 0; width: 3rem; bottom: 3rem; }
-
-
+.img-font{vertical-align: text-bottom;}
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){
