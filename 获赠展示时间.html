@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>获赠展示时间</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="getDisplayTime">
+            <div class="big-banner">
+                <img src="images/getTimeBanner.png" alt="">
+           </div>
+                <div class="g-row">
+                    <div class="g-card type1">
+                        <div class="title"></div>
+                        <ul class="time clearfix">
+                            <span>获赠时长：</span>
+                            <li>7天</li>
+                            <li>14天</li>
+                            <li>30天</li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="number clearfix">
+                            <span>邀请人数：</span>
+                            <li>3</li>
+                            <li>5</li>
+                            <li>9</li>
+                        </ul>
+                        <a href="" class="g-btn g-btn-blue">马上邀请</a>
+                        <p class="f-red">当前邀请人数：0</p>
+                    </div>
+                    <div class="g-card type2">
+                        <div class="title"></div>
+                        <ul>
+                            <li>
+                                <div class="condition">
+                                    <span>满足条件</span>
+                                    展示页面1天内达到<i class="f-red">60</i>套商品支持
+                                </div>
+                                <p><img src="images/zeng.png" alt="">免费获赠：<span><img src="images/user/v-jingli.png" alt="" class="user">（经理权益）</span></p>
+                                <p><img src="images/shi.png" alt="">时间：<span class="f-red">无限期展示</span></p>
+                                <a href="" class="g-btn g-btn-blue">马上分享</a>
+                            </li>
+                            <li>
+                                <div class="condition">
+                                    <span>满足条件</span>
+                                    展示页面1天内达到<i class="f-red">10</i>套商品支持
+                                </div>
+                                <p><img src="images/zeng.png" alt="">免费获赠：<span><img src="images/user/v-daili.png" alt="" class="user">（销售代表权益）</span></p>
+                                <p><img src="images/shi.png" alt="">时间：<span class="f-red">+14天展示时间</span></p>
+                                <a href="" class="g-btn g-btn-blue">马上分享</a>
+                            </li>
+                            <li>
+                                <div class="condition">
+                                    <span>满足条件</span>
+                                    展示页面1天内达到<i class="f-red">2</i>套商品支持
+                                </div>
+                                <p><img src="images/zeng.png" alt="">免费获赠：<span><img src="images/user/v-xiaoshou.png" alt="" class="user">（销售专员权益）</span></p>
+                                <p><img src="images/shi.png" alt="">时间：<span class="f-red">+7天展示时间</span></p>
+                                <a href="" class="g-btn g-btn-blue">马上分享</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-footer g-fixed g-footer-blue">
+            <div class="g-col">
+                <a href=""  class="g-btn">返回</a>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
