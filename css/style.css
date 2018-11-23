@@ -516,9 +516,11 @@ a{display: inline-block;vertical-align: middle;}
 .videoPlatform .rank .title .fr{font-size: .6rem; color: #c5c7c9; }
 .videoPlatform .rank ul{} 
 .videoPlatform .rank ul li{margin-bottom: .5rem; padding-bottom: .5rem; border-bottom: 1px solid #ddd; } 
-.videoPlatform .rank ul li .img-box{float: left; width: 6rem; position: relative; margin-right: .5rem; }
-.videoPlatform .rank ul li .img-box img{border: 1px solid #93afff;border-radius: .5rem;overflow: hidden;width: 100%;} 
-.videoPlatform .rank ul li .img-box .font-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 1.5rem; padding: .25rem; background: rgba(255, 255, 255, .65); text-align: center; } 
+.videoPlatform .rank ul li .img-box{float: left;width: 6rem;position: relative;margin-right: .5rem;z-index: 1;height: 8rem;display: table-cell;border: 1px solid #93afff;border-radius: .5rem;overflow: hidden;vertical-align: middle;}
+.videoPlatform .rank ul li .img-box img{width: 100%;} 
+.videoPlatform .rank ul li .img-box .font-box{position: absolute;left: 0;bottom: 0;width: 100%;height: 1.5rem;padding: .25rem;background: rgba(255, 255, 255, .65);text-align: center;} 
+.videoPlatform .rank ul li .img-box:before{content: '';display: block;width: 2rem;height: 2rem;position: absolute;left: 50%;top: 50%;margin: -1.5rem 0 0 -1rem;border-radius: 100%;background: rgba(255, 255, 255, 0.85);}
+.videoPlatform .rank ul li .img-box:after{content: '';display: block;position: absolute;left: 50%;top: 50%;width: 0;height:0;margin: -1rem 0 0 -.1rem;border-width: .5rem 0 .5rem .5rem;border-style:solid;border-color: transparent transparent transparent #5577fe;/*透明 透明 透明 灰*/}
 .videoPlatform .rank ul li .text-box{padding-top: .25rem; position: relative; } 
 .videoPlatform .rank ul li .text-box .name{padding-right: 4rem;height: 2rem;font-size: .65rem;} 
 .videoPlatform .rank ul li .text-box .name i{} 
