@@ -525,7 +525,7 @@ a{display: inline-block;vertical-align: middle;}
 .videoPlatform .rank ul li .text-box .name{padding-right: 4rem;height: 2rem;font-size: .65rem;} 
 .videoPlatform .rank ul li .text-box .name i{} 
 .videoPlatform .rank ul li .text-box .level{height: 4rem; display: flex; align-items: center; padding-bottom: 1rem; }
-.videoPlatform .rank ul li .text-box .level span{display: inline-block;background: url('../images/qy3.png') no-repeat;width: 8rem;height: 2.25rem;background-size: 8rem;font-size: .5rem;color: #fff;padding-left: 2.25rem;padding-top: 0;line-height: 2.25rem;background-position-y: .2rem;} 
+.videoPlatform .rank ul li .text-box .level span{display: inline-block;background: url('../images/qy3.png') no-repeat;width: 8rem;height: 2.25rem;background-size: 8rem;font-size: .5rem;color: #fff;padding-left: 2.25rem;padding-top: 0;line-height: 2.25rem;background-position-y: .2rem;transform: scale(.7);position: relative;left: -1rem;} 
 .videoPlatform .rank ul li .text-box .level span.jin{background-image: url('../images/qy1.png');}
 .videoPlatform .rank ul li .text-box .level span.hong{background-image: url('../images/qy2.png');}
 .videoPlatform .rank ul li .text-box .votes{font-size: .65rem; } 
