@@ -118,9 +118,9 @@ $('.sharePage .img-info img').click(function(e) {
         })
     var index = $(this).index();
     var imgArr=$(this).parent().find('img');
-    for (var i = imgArr.length - 1; i >= 0; i--) {
+    for (var i=0;i<imgArr.length;i++) {
         bigBannerSwiper.appendSlide('<div class="swiper-slide"><img src='+$(imgArr[i]).attr('src')+'></div>')
-    }
+    };
     bigBannerSwiper.slideTo(index, 0, false);
     $('.bigGallery').show();
 })
