@@ -138,3 +138,27 @@ bannerSwiper = new Swiper('.banner .swiper-container', {
 })
 
 
+// 创建账户js
+var productSwiper;
+productSwiper = new Swiper('.productSwiper .swiper-container', {
+    loop:true,
+    spaceBetween: 10,
+    slidesPerView : 3,
+    slidesPerGroup : 3,
+    pagination: '.productSwiper .swiper-pagination',
+})
+
+// 根据select选中值去显示权益
+
+$('#j-equity').change(function(){
+    //获取当前选中项，然后获取data值，这个值为权益显示的index;
+    var index=$(this).find('option:selected').attr('data-equity');
+    $('#equity .item').eq(index).show().siblings().hide();
+
+
+
+})
+
+
+
+

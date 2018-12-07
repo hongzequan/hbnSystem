@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>创建账户</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+	<div class="wrap">
+		<div class="createAccount">
+			<div class="big-banner">
+	           <img src="images/createAccount_top_font.png" alt="" class="font">
+	         </div>
+	         <div class="productSwiper">
+	         	<div class="swiper-container">
+	                <div class="swiper-wrapper">
+	                    <div class="swiper-slide">
+	                    	<a href="">
+	                    		<div class="img-box">
+	                    			<img src="images/product_1.png" alt="">
+	                    		</div>
+	                    		<div class="font-box">
+	                    			<h3>洗发露+洗衣液</h3>
+	                    			<span class="f-red">会员价：99元</span>
+	                    		</div>
+	                    	</a>
+	                    </div>
+	                    <div class="swiper-slide">
+	                    	<a href="">
+	                    		<div class="img-box">
+	                    			<img src="images/product_2.png" alt="">
+	                    		</div>
+	                    		<div class="font-box">
+	                    			<h3>姿永芳H洗发露姿永芳H洗发露</h3>
+	                    			<span class="f-red">会员价：99元</span>
+	                    		</div>
+	                    	</a>
+	                    </div>
+	                    <div class="swiper-slide">
+	                    	<a href="">
+	                    		<div class="img-box">
+	                    			<img src="images/product_1.png" alt="">
+	                    		</div>
+	                    		<div class="font-box">
+	                    			<h3>洗发露+洗衣液</h3>
+	                    			<span class="f-red">会员价：99元</span>
+	                    		</div>
+	                    	</a>
+	                    </div>
+	                    <div class="swiper-slide">
+	                    	<a href="">
+	                    		<div class="img-box">
+	                    			<img src="images/product_2.png" alt="">
+	                    		</div>
+	                    		<div class="font-box">
+	                    			<h3>姿永芳H洗发露</h3>
+	                    			<span class="f-red">会员价：99元</span>
+	                    		</div>
+	                    	</a>
+	                    </div>
+	                    <div class="swiper-slide">
+	                    	<a href="">
+	                    		<div class="img-box">
+	                    			<img src="images/product_1.png" alt="">
+	                    		</div>
+	                    		<div class="font-box">
+	                    			<h3>洗发露+洗衣液</h3>
+	                    			<span class="f-red">会员价：99元</span>
+	                    		</div>
+	                    	</a>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="swiper-pagination"></div>
+	         </div>
+	         <div class="g-row">
+	         	<form action="" class="join-form">
+                        <div class="g-card clearfix">
+                            <strong>选择平台角色：</strong>
+                            <div class="input-box">
+                                <select class="" id="j-equity">
+                                    <option value="0" selected data-equity='0'>销售代表（消费10套）</option>
+                                    <option value="1" data-equity='1'>销售经理（消费60套）</option>
+                                    <option value="2" data-equity='2'>销售经理（消费100套）</option>
+                                </select>
+                                <i class="iconfont icon-xiala right"></i>
+                            </div>
+                        </div>
+                        <div class="g-card clearfix">
+                            <strong>平台内测码：</strong>
+                            <div class="input-box">
+                                <input type="text" placeholder="输入内测码可免消费金额">
+                            </div>
+                        </div>
+                    </form>
+                <div class="g-title">可享用权益：</div>
+                <!-- 权益的顺序要上面select的顺序一致 -->
+				<div class="equity" id="equity">
+					<div class="item" style="display: block;">
+						<ul class="clearfix">
+							<!-- 假如需要点击跳转 -->
+							<li><a href=""><img src="images/icon/qy1.png" alt="">销售利润</a></li>
+							<li><a href=""><img src="images/icon/qy2.png" alt="">月销量奖励</a></li>
+							<li><a href=""><img src="images/icon/qy3.png" alt="">团队拓展奖励</a></li>
+						</ul>
+					</div>
+					<div class="item">
+						<ul class="clearfix">
+							<li><img src="images/icon/qy1.png" alt="">销售利润</li>
+							<li><img src="images/icon/qy2.png" alt="">月销量奖励</li>
+							<li><img src="images/icon/qy3.png" alt="">团队拓展奖励</li>
+							<li><img src="images/icon/qy4.png" alt="">团队升级奖励</li>
+						</ul>
+					</div>
+					<div class="item">
+						<ul class="clearfix">
+							<li><img src="images/icon/qy1.png" alt="">销售利润</li>
+							<li><img src="images/icon/qy2.png" alt="">月销量奖励</li>
+							<li><img src="images/icon/qy3.png" alt="">团队拓展奖励</li>
+							<li><img src="images/icon/qy4.png" alt="">团队升级奖励</li>
+							<li><img src="images/icon/qy5.png" alt="">团队收益分成</li>
+							<li><img src="images/icon/qy6.png" alt="">精英团队出国游</li>
+						</ul>
+					</div>
+				</div>
+	         </div>
+		</div>
+	</div>
+	<div class="g-footer g-fixed">
+            <div class="g-col">
+                <a href="" class="g-btn">马上领取资格</a>
+            </div>
+        </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
