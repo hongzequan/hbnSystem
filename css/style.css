@@ -47,6 +47,7 @@ a{display: inline-block;vertical-align: middle;}
 /*边框型按钮*/
 .g-btn-border{display: inline-block;vertical-align: middle;border: 1px solid #853fa1;color: #853fa1;padding: 0 1rem;line-height: 1.25rem;border-radius: 1rem;} 
 .g-btn-blue{background: #5a7af6;}
+
 .g-row{margin:.5rem;}
 .g-low{margin:.5rem 0}
 .g-title{position: relative;line-height: 1.75rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .65rem;}
@@ -591,8 +592,25 @@ a{display: inline-block;vertical-align: middle;}
 .createAccount .equity .item ul li img{vertical-align: middle; width:1.5rem; margin-right: .5rem; }
 .createAccount .equity .item ul li a{display: block;}
 
-
-
+/*1元专区*/
+.yiyuan{font-size: .55rem;background: #fff;}
+.yiyuan .item{padding: .5rem; } 
+.yiyuan .item .list{border: 1px dashed #ff8a9c;border-radius: 6px;padding: .5rem;position: relative;margin-top: 2.5rem;margin-bottom: .5rem;}
+.yiyuan .item .list .title{display: inline-block;padding: .5rem 1rem .5rem .5rem;position: absolute;top: -2rem;left: 50%;transform: translate(-50%,0);background: url('../images/icon/huodong.png') no-repeat;width: 6rem;height: 3rem;background-size: 6rem;color: #fff;font-size: .8rem;text-align: right;line-height: 3rem;} 
+.yiyuan .item .list ul{padding: 1rem 0 .5rem;position: relative;} 
+.yiyuan .item .list ul li{float: left;width: 48%;text-align: center;} 
+.yiyuan .item .list ul li:nth-child(2n){float:right;} 
+.yiyuan .item .list .img-box{margin-bottom: .5rem; } 
+.yiyuan .item .list .img-box img{width: 100%;} 
+.yiyuan .item .list .font-box{} 
+.yiyuan .item .list .font-box p{background: #ff8d9a;color: #fff;border-radius: 12px;width: 90%;margin: 0 auto .25rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: .1rem .25rem;font-size: 12px;} 
+.yiyuan .item .list .price{text-align: right; } 
+.yiyuan .item .list .price .old{position: absolute; left: 0; background: #fc5e7f; color: #fff; padding: .1rem .8rem .1rem .4rem; } 
+.yiyuan .item .list .price .old:before{content:'';position: absolute;right: 0;top: 0;border-width: .6rem .3rem .6rem 0;border-style:solid;border-color: transparent #fff transparent transparent;/*透明 黄 透明 透明 */}
+.yiyuan .item .list .price .new{color: #fc5e7f;font-size: .5rem;display: inline-block;vertical-align: middle;}
+.yiyuan .item .list .price .new i{font-size: .7rem; } 
+.yiyuan .item .list .price a{display: inline-block;vertical-align: middle;background: #fc5e7f;color: #fff;padding: .1rem .5rem;border-radius: 20px;margin-left: .2rem;}
+.yiyuan .item .list .add{background: url('../images/icon/fenyuan.png') no-repeat;position: absolute;top: 4rem;left: 50%;width: 2rem;height: 2rem;color: #fff;background-size: 2rem;text-align: center;line-height: 2rem;margin-left: -.75rem;}
 
 
 /*超出1024的处理方式*/

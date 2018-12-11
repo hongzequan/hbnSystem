@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body>
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="yiyuan">
+            <div class="big-banner">
+                <img src="images/1yuanBanner.png" alt="">
+            </div>
+                <div class="item">
+                    <div class="list">
+                        <!-- ①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳ -->
+                        <span class="title">①</span>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box"><img src="images/product_3.png" alt=""></div>
+                                    <div class="font-box">
+                                        <p>洗衣液1箱</p>
+                                        <p>洗衣机1台</p>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="img-box"><img src="images/product_4.png" alt=""></div>
+                                    <div class="font-box">
+                                        <p>洗衣液1箱、洗衣机1台</p>
+                                        <p>洗洁精1箱</p>
+                                    </div>
+                            </li>
+                        </ul>
+                        <i class="add">+1元</i>
+                        <div class="price">
+                            <span class="old">原价：188元</span>
+                            <span class="new">劲爆价：<i>¥189.00</i> </span>
+                            <a href="">点击购买</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span class="title">②</span>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box"><img src="images/product_3.png" alt=""></div>
+                                    <div class="font-box">
+                                        <p>洗衣液1箱</p>
+                                        <p>洗衣机1台</p>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="img-box"><img src="images/product_4.png" alt=""></div>
+                                    <div class="font-box">
+                                        <p>洗衣液1箱、洗衣机1台</p>
+                                        <p>洗洁精1箱</p>
+                                    </div>
+                            </li>
+                        </ul>
+                        <i class="add">+1元</i>
+                        <div class="price">
+                            <span class="old">原价：188元</span>
+                            <span class="new">劲爆价：<i>¥189.00</i> </span>
+                            <a href="">点击购买</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
