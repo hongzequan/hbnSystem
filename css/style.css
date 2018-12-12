@@ -28,7 +28,7 @@ a{display: inline-block;vertical-align: middle;}
 /*公用底部*/
 .g-footer{position: fixed;left: 0;bottom: 0;width: 100%;-webkit-box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);height: 2.5rem;display: flex;padding: 0 .5rem;align-items: center;justify-content: center;text-align: center;font-size: .7rem;background: #fff;z-index: 1;}
 .g-footer .g-col a{display: block;margin:0 auto;}
-.g-footer .g-btn{height: 1.75rem;line-height: 1.75rem;}
+.g-footer .g-btn{height: 1.5rem;line-height: 1.5rem;}
 .g-two-btn-box .g-btn{width: 50%; float: left; border-radius: 1rem 0 0 1rem; font-size: .6rem; background: #aa7ca5;} 
 .g-two-btn-box .g-btn+.g-btn{border-radius: 0 1rem 1rem 0; background: -webkit-linear-gradient(left, #7757a0 , #ebabac); background: -o-linear-gradient(right, #7757a0, #ebabac); background: -moz-linear-gradient(right, #7757a0, #ebabac); background: linear-gradient(to right, #7757a0 , #ebabac);} 
 .g-footer-blue .g-btn{background: #738ff9;}
