@@ -310,8 +310,8 @@ a{display: inline-block;vertical-align: middle;}
 .joinRegister .top-img-box p{font-size: 1.25rem;}
 .joinRegister .top-img-box span{font-size: .75rem;}
 .join-form{}
-.join-form strong{float: left;width: 3.5rem;text-align: right;text-align-last: justify;}
-.join-form .input-box{overflow: hidden;position: relative;}
+.join-form strong{float: left;width: 3.5rem;text-align: right;text-align-last: justify;line-height: 1rem;}
+.join-form .input-box{overflow: hidden;position: relative;line-height: 1rem;}
 .join-form .input-box select{width: 100%;font-size: .65rem;height: 1rem;border: 0;margin: 0;padding: 0;background: transparent;padding-right: 1.25rem;-webkit-appearance: none;}
 .join-form .input-box select:focus{outline: none;}
 .join-form .input-box input,select{width: 100%;padding-right: 1.25rem;font-size: .65rem;height: 1rem;}
@@ -627,7 +627,8 @@ a{display: inline-block;vertical-align: middle;}
 /*商品选择*/
 .goodsSelect{font-size: .55rem;}
 .goodsSelect .join-form{margin-bottom: .25rem;}
-.goodsSelect .join-form strong{width: 4.5rem;}
+.goodsSelect .join-form strong{width: 4.5rem;font-size: .6rem;}
+.goodsSelect .join-form .g-card{padding:.5rem;}
 .goodsSelect .g-card{padding:0 .5rem;margin-bottom: .5rem;}
 .goodsSelect ul{padding: .5rem 0;position: relative;z-index: 1;} 
 .goodsSelect ul li{border-bottom: 1px dashed #ddd;margin-bottom: .5rem;padding-bottom: .5rem;} 
