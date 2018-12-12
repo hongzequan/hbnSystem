@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>商品选择</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top" style="padding-bottom: 4.5rem;">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="goodsSelect">
+            <div class="big-banner">
+                <img src="images/banner/1.png" alt="">
+            </div>
+            <div class="g-row">
+                <form action="" class="join-form">
+                    <div class="g-card clearfix">
+                            <strong>平台内测码：</strong>
+                            <div class="input-box">
+                                <input type="text" placeholder="可免消费获赠销售代表资格">
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="g-card">
+                <div class="g-title">请选择您的商品  <a class="img-fr" onclick="openModal()"><img src="images/icon/priceDetail.png" alt=""></a></div>
+                <ul id="j-imgShow">
+                    <li class="clearfix">
+                        <!-- data-imgSrc绑定你详情页的图片地址 -->
+                        <div class="img-box j-img" data-imgSrc="images/text-detail/producDetail.jpg" >
+                            <img src="images/product_2.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <h3>洗发露+洗衣液</h3>
+                            <span class="f-red">零售价：99元</span>
+                            <div class="right-fun">
+                                <i class="iconfont icon-jian" onclick="lessNum2(this)"></i>
+                                <input type="number" value="0">
+                                <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="img-box j-img"  data-imgSrc="images/product_2.png">
+                            <img src="images/product_2.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <h3>洗发露+洗衣液</h3>
+                            <span class="f-red">零售价：99元</span>
+                            <div class="right-fun">
+                                <i class="iconfont icon-jian" onclick="lessNum2(this)"></i>
+                                <input type="number" value="0">
+                                <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix ">
+                        <div class="img-box j-img">
+                            <img src="images/product_3.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <h3>洗发露+洗衣液</h3>
+                            <span class="f-red">零售价：99元</span>
+                            <div class="right-fun">
+                                <i class="iconfont icon-jian" onclick="lessNum2(this)"></i>
+                                <input type="number" value="0">
+                                <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix ">
+                        <div class="img-box j-img">
+                            <img src="images/product_4.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <h3>洗发露+洗衣液</h3>
+                            <span class="f-red">零售价：99元</span>
+                            <div class="right-fun">
+                                <i class="iconfont icon-jian" onclick="lessNum2(this)"></i>
+                                <input type="number" value="0">
+                                <i class="iconfont icon-jia" onclick="addNum(this)"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="g-tips g-subfooter">再销售或购买<span class="f-red">2套</span>，即可获赠<span class="f-red">销售专员资格</span>；</div>
+        </div>
+    </div>
+        <!-- 价格说明 -->
+        <!-- bootstarp公用弹窗框架 -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="g-card g-style4">
+                    <div class="g-title2"><span>价格说明</span></div>
+                    <div class="font-box">
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+
+
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                        <p>1、该页面中合计的金额将对应您的成交数量显示;</p>
+                        <p>2、当您销售或购买达到对应数量时可享受折扣优惠;举例如下~</p>
+                        <p>当您销售或购买达到1套时即可获赠平台会员资格,后续可享受会员供应价<span class="f-red">99元/套</span>;</p>
+                    </div>
+                </div>
+                <i class="iconfont icon-guanbi closeModal" onclick="closeModal()"></i>
+            </div>
+            <div class="modal-backdrop"></div>
+        </div>
+        
+        <div class="j-mask-img" id="j-mask-img" onclick="hideMaskImg(this)">
+            <div class="img-box"></div>
+        </div>
+    <div class="g-footer g-fixed g-footer-goodsSelect">
+        <div class="g-col2">
+            合计：<span class="f-red">¥<i class="b">1224.5</i></span>
+            <span>(共<i class="f-red">20</i>套)</span>
+        </div>
+        <div class="g-col">
+            <a href="" class="g-btn">获赠资格</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

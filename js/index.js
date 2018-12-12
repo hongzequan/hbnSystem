@@ -74,12 +74,26 @@ function lessNum(obj) {
     var value = $(obj).siblings('input').val();
     value = parseInt(value) - 1;
     if (value == 0) {
-        $(obj).closest('.g-row').fadeOut(function() {
+        $(obj).closest('.x-row').fadeOut(function() {
             $(this).remove();
         });
     }
     input.val(value);
 }
+
+function lessNum2(obj) {
+    var input = $(obj).siblings('input');
+    var value = $(obj).siblings('input').val();
+    if (value == 0) {
+        $(obj).closest('.x-row').fadeOut(function() {
+            $(this).remove();
+        });
+        return false;
+    }
+    value = parseInt(value) - 1;
+    input.val(value);
+}
+
 // 添加数量
 function addNum(obj) {
     var input = $(obj).siblings('input');
@@ -149,16 +163,25 @@ productSwiper = new Swiper('.productSwiper .swiper-container', {
 })
 
 // 根据select选中值去显示权益
-
 $('#j-equity').change(function(){
     //获取当前选中项，然后获取data值，这个值为权益显示的index;
     var index=$(this).find('option:selected').attr('data-equity');
     $('#equity .item').eq(index).show().siblings().hide();
-
-
-
 })
 
+$('#j-imgShow .j-img').click(function(event) {
+    /* Act on the event */
+    var src=$(this).attr('data-imgSrc');
+    var img="<img src='"+src+"'>";
+    console.log(img)
+    $('#j-mask-img .img-box').append(img);
+    $('#j-mask-img').fadeIn('400');
+});
 
+function hideMaskImg(obj){
+    $(obj).fadeOut('400', function() {
+        $(obj).find('img').remove();
+    });
+}
 
 

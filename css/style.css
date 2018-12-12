@@ -48,6 +48,9 @@ a{display: inline-block;vertical-align: middle;}
 .g-btn-border{display: inline-block;vertical-align: middle;border: 1px solid #853fa1;color: #853fa1;padding: 0 1rem;line-height: 1.25rem;border-radius: 1rem;} 
 .g-btn-blue{background: #5a7af6;}
 
+/*倒数第二个底部置顶*/
+.g-subfooter{position: fixed;left: 0;width: 100%;bottom: 2.5rem;z-index: 1;box-shadow: 0.125rem -0.216506rem 0.6rem rgba(51, 51, 51, 0.2);}
+
 .g-row{margin:.5rem;}
 .g-low{margin:.5rem 0}
 .g-title{position: relative;line-height: 1.75rem;border-bottom: 1px solid #e3e3e3;padding-left: 1rem;font-size: .65rem;}
@@ -62,6 +65,8 @@ a{display: inline-block;vertical-align: middle;}
 
 .g-title .fr{position: absolute; right: 0; top: 0; height: 1.75rem; display: flex; align-items: center; justify-content: center;} 
 .g-title .fr .g-btn{margin-left: .25rem;}
+.g-title .img-fr{position: absolute;right: -.5rem;top: 0;width: 5.25rem;padding: .25rem;}
+.g-title .img-fr img{width: 100%;}
 /*公用模块*/
 /*登录页面*/
 #login{padding-bottom: 5rem;}
@@ -133,8 +138,15 @@ a{display: inline-block;vertical-align: middle;}
 .g-style3 .img-box{margin: .5rem 0; } 
 .g-style3 .img-box img{width: 8rem; } 
 .g-style3 .font-box{text-align: left; } 
-.g-style3 .font-box p{padding: 0 1rem; margin-bottom: .25rem; } /*微客提升*/
+.g-style3 .font-box p{padding: 0 1rem; margin-bottom: .25rem; }
+ /*微客提升*/
 
+.g-style4{font-size: .55rem; } 
+.g-style4 .font-box{max-height: 14rem; overflow: auto; }
+.g-style4 .font-box p{margin-bottom: .15rem;}
+
+.j-mask-img{display: none;position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; overflow: auto;background: #fff;}
+.j-mask-img img{width: 100%;}
 
 
 
@@ -362,7 +374,7 @@ a{display: inline-block;vertical-align: middle;}
 .g-bottom-toggle .product-list li{align-items: center;justify-content: space-between;margin-bottom:.5rem;padding-bottom: .5rem;border-bottom:1px solid #ddd;}
 .g-bottom-toggle .product-list li:last-child{border-bottom:0;padding-bottom: 0;margin-bottom: 0;}
 .g-bottom-toggle .product-list .right-fun{}
-.g-bottom-toggle .product-list .right-fun input{width: 2rem;text-align: center;font-size: .8rem;}
+.g-bottom-toggle .product-list .right-fun input{width: 2rem;text-align: center;font-size: .8rem;pointer-events:none;}
 .g-bottom-toggle .product-list .right-fun i{font-size: .9rem;}
 .g-bottom-toggle .product-list .font-box{}
 .g-bottom-toggle .product-list .font-box h3{margin-bottom:.5rem;}
@@ -611,6 +623,34 @@ a{display: inline-block;vertical-align: middle;}
 .yiyuan .item .list .price .new i{font-size: .7rem; } 
 .yiyuan .item .list .price a{display: inline-block;vertical-align: middle;background: #fc5e7f;color: #fff;padding: .1rem .5rem;border-radius: 20px;margin-left: .2rem;}
 .yiyuan .item .list .add{background: url('../images/icon/fenyuan.png') no-repeat;position: absolute;top: 3.75rem;left: 50%;width: 2rem;height: 2rem;color: #fff;background-size: 2rem;text-align: center;line-height: 2rem;margin-left: -1rem;}
+
+/*商品选择*/
+.goodsSelect{font-size: .55rem;}
+.goodsSelect .join-form{margin-bottom: .25rem;}
+.goodsSelect .join-form strong{width: 4.5rem;}
+.goodsSelect .g-card{padding:0 .5rem;margin-bottom: .5rem;}
+.goodsSelect ul{padding: .5rem 0;position: relative;z-index: 1;} 
+.goodsSelect ul li{border-bottom: 1px dashed #ddd;margin-bottom: .5rem;padding-bottom: .5rem;} 
+.goodsSelect ul li:last-child{border-bottom: 0;padding-bottom: 0;}
+.goodsSelect ul li .img-box{float: left; width: 5rem; height: 5rem; margin-right: .5rem;} 
+.goodsSelect ul li .img-box img{width: 100%;} 
+.goodsSelect ul li .font-box{position: relative; height: 5rem; overflow: hidden; } 
+.goodsSelect ul li .font-box h3{font-size: .7rem; } 
+.goodsSelect ul li .font-box span{position: absolute;bottom: 0;left: 0;font-size: 0.7rem;}
+.goodsSelect ul li .font-box .right-fun{position: absolute; right: 0; bottom: 0; }
+.goodsSelect ul li .font-box .right-fun input{width: 1rem;text-align: center;font-size: .8rem;pointer-events:none;color: #aaa;}
+.goodsSelect ul li .font-box .right-fun i{font-size: .9rem;}
+
+
+
+
+.g-footer-goodsSelect{}
+.g-footer-goodsSelect .b{font-size: .9rem;}
+.g-footer-goodsSelect span+span{margin-left: .5rem;font-size: .6rem;}
+
+
+
+
 
 
 
