@@ -65,8 +65,8 @@ a{display: inline-block;vertical-align: middle;}
 
 .g-title .fr{position: absolute; right: 0; top: 0; height: 1.75rem; display: flex; align-items: center; justify-content: center;} 
 .g-title .fr .g-btn{margin-left: .25rem;}
-.g-title .img-fr{position: absolute;right: -.5rem;top: 0;width: 5.25rem;padding: .25rem;}
-.g-title .img-fr img{width: 100%;}
+.g-title .img-fr{position: absolute;right: -.5rem;top: 0;width: 5.25rem;padding: .25rem 0;}
+.g-title .img-fr img{width: 100%;vertical-align: top;}
 /*公用模块*/
 /*登录页面*/
 #login{padding-bottom: 5rem;}
@@ -657,7 +657,7 @@ a{display: inline-block;vertical-align: middle;}
 
 /*超出1024的处理方式*/
 @media (min-width: 1024px){
-  .topLevel,.g-fixed{max-width: 1024px;left: 50% !important;margin-left: -512px;}
+  .topLevel,.g-fixed,.g-subfooter{max-width: 1024px;left: 50% !important;margin-left: -512px;}
 }
 
 @media (max-width: 320px){
