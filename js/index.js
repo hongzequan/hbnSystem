@@ -25,7 +25,7 @@ function openModal() {
     var mask = $('.modal-backdrop')
     mondal.show().addClass('fade in');
     mask.show().addClass('fade in');
-    $('html,body').addClass('no-scroll')
+    ModalHelper.afterOpen();
 }
 
 function closeModal() {
@@ -33,7 +33,8 @@ function closeModal() {
     var mask = $('.modal-backdrop')
     mondal.hide().removeClass('fade in');
     mask.hide().removeClass('fade in');
-    $('html,body').removeClass('no-scroll')
+    $('body').removeClass('no-scroll');
+    ModalHelper.beforeClose();
 }
 
 
@@ -180,16 +181,33 @@ $('#j-imgShow .j-img').click(function(event) {
     var img="<img src='"+src+"'>";
     $('#j-mask-img .img-box').append(img);
     $('#j-mask-img').fadeIn('400');
-        $('html,body').addClass('no-scroll')
-    
+    ModalHelper.afterOpen();
 });
 
 function hideMaskImg(obj){
     $(obj).fadeOut('400', function() {
         $(obj).find('img').remove();
     });
-    $('html,body').removeClass('no-scroll')
-
+    ModalHelper.beforeClose();
 }
-
+/**
+  * ModalHelper helpers resolve the modal scrolling issue on mobile devices
+  * https://github.com/twbs/bootstrap/issues/15852
+  * requires document.scrollingElement polyfill https://github.com/yangg/scrolling-element
+  */
+var ModalHelper = (function(bodyCls) {
+  var scrollTop;
+  return {
+    afterOpen: function() {
+      scrollTop = document.scrollingElement.scrollTop;
+      document.body.classList.add(bodyCls);
+      document.body.style.top = -scrollTop + 'px';
+    },
+    beforeClose: function() {
+      document.body.classList.remove(bodyCls);
+      // scrollTop lost after set position:fixed, restore it back.
+      document.scrollingElement.scrollTop = scrollTop;
+    }
+  };
+})('no-scroll');
 
