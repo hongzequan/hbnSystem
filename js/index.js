@@ -18,12 +18,14 @@ function setCopyText(obj) {
     });
 }
 
+
 // 打开弹窗
 function openModal() {
     var mondal = $('.modal');
     var mask = $('.modal-backdrop')
     mondal.show().addClass('fade in');
     mask.show().addClass('fade in');
+    $('html,body').addClass('no-scroll')
 }
 
 function closeModal() {
@@ -31,7 +33,10 @@ function closeModal() {
     var mask = $('.modal-backdrop')
     mondal.hide().removeClass('fade in');
     mask.hide().removeClass('fade in');
+    $('html,body').removeClass('no-scroll')
 }
+
+
 // 注册加盟表单，点击清空数据
 function clearVal(obj) {
     $(obj).siblings('input').val('');
@@ -173,15 +178,18 @@ $('#j-imgShow .j-img').click(function(event) {
     /* Act on the event */
     var src=$(this).attr('data-imgSrc');
     var img="<img src='"+src+"'>";
-    console.log(img)
     $('#j-mask-img .img-box').append(img);
     $('#j-mask-img').fadeIn('400');
+        $('html,body').addClass('no-scroll')
+    
 });
 
 function hideMaskImg(obj){
     $(obj).fadeOut('400', function() {
         $(obj).find('img').remove();
     });
+    $('html,body').removeClass('no-scroll')
+
 }
 
 

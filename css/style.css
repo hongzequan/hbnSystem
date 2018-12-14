@@ -22,6 +22,9 @@ a{display: inline-block;vertical-align: middle;}
 .text-center{text-align: center;}
 .f-bold{font-weight: bold;}
 
+.no-scroll{overflow: hidden;height: 100%;}
+
+
 .wrap{height: 100%;}
 /*公用模块*/
 .g-top{padding-bottom: 2.5rem;}
@@ -142,8 +145,12 @@ a{display: inline-block;vertical-align: middle;}
  /*微客提升*/
 
 .g-style4{font-size: .55rem; } 
-.g-style4 .font-box{max-height: 14rem; overflow: auto; }
+.g-style4 .font-box{max-height: 14rem; overflow-y: scroll;overflow: auto; padding: .5rem;margin-bottom: .5rem;background: #fff;}
 .g-style4 .font-box p{margin-bottom: .15rem;}
+
+.g-style4 .font-box::-webkit-scrollbar{width: 6px; height: 6px; background-color: #F5F5F5; } 
+.g-style4 .font-box::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #F5F5F5; } 
+.g-style4 .font-box::-webkit-scrollbar-thumb{border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: #aaa; }
 
 .j-mask-img{display: none;position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; overflow: auto;background: #fff;}
 .j-mask-img img{width: 100%;}
