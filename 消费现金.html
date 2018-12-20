@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>消费现金</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="consumptionCash">
+             <div class="g-big-banner">
+                <img src="images/userCenter_top.jpg" alt="">
+                <div class="font-box">
+                    <p>可提现现金（元）：</p>
+                    <div class="number"><span>¥4240.00</span><span class="small f-red">(¥50.00正在审核中)</span></div>
+                </div>
+                <a href="" class="des"><img src="images/icon/wenhao.png" alt="">现金说明</a>
+                <a href="" class="getCash"><img src="images/icon/getCash.png" alt=""></a>
+            </div>
+            <div class="g-low">
+                <div class="g-title">现金奖励 <span class="fr f-gray">完成任务自动结算</span></div>
+            </div>
+
+            <!-- 已获得 -->
+            <div class="g-card clearfix">
+                <!-- 待激活添加class="djh" -->
+                <div class="img-box djh">
+                    <img src="images/icon/jh-price.png" alt="" >
+                    <span>¥<i>8</i></span>
+                </div>
+                <div class="font-box">
+                    <div class="time">领取时间：18/12/19 16:30</div>
+                    <p>激活条件：累计消费：<span class="f-red">¥50.00</span></p>
+                    <p>当前消费：<span class="f-red">¥0.00</span></p>
+                    <a href="" class="g-btn">马上激活</a>
+                </div>
+            </div>
+            <!-- 不可激活的添加class="unfinished" -->
+            <div class="g-card clearfix unfinished">
+                <!-- 待激活添加class="djh" -->
+                <div class="img-box">
+                    <img src="images/icon/jh-price.png" alt="" >
+                    <span>¥<i>50</i></span>
+                </div>
+                <div class="font-box">
+                    <div class="time">领取时间：18/12/19 16:30</div>
+                    <p>激活条件：累计消费：<span class="f-red">¥50.00</span></p>
+                    <p>当前消费：<span class="f-red">¥0.00</span></p>
+                    <a href="" class="g-btn">马上激活</a>
+                </div>
+            </div>
+
+            <!-- 未获得 -->
+            <div class="g-row" style="display: none;">
+                <div class="g-card no-data">
+                    <img src="images/kaixin.png" alt="">
+                    <p>参与好帮你消费现金活动</p>
+                    <p>购买8元商品最高可返还50元<span class="f-red">可提现现金</span></p>
+                    <a href="" class="g-btn">马上开启奖励</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="g-footer g-fixed">
+        <div class="g-col2">
+            <a class="g-btn">返回</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -338,6 +338,8 @@ a{display: inline-block;vertical-align: middle;}
 .g-big-banner .font-box .number{font-size: .7rem; } 
 .g-big-banner .font-box .number span{font-size: 1.25rem;} 
 .g-big-banner a{position: absolute;right: .5rem;top: 1rem;color: #fff;background: rgba(0, 0, 0, 0.3);padding: .1rem .75rem;border-radius: 1rem;font-size: .6rem;} 
+.g-big-banner .des{background: none;font-size: .5rem;text-decoration: underline;}
+.g-big-banner .des img{width: 1rem; vertical-align: middle; }
 
 .incomeTab{display: flex; align-items: center; justify-content: center; background: #fff; } 
 .incomeTab li{flex: 1;text-align: center;padding: .5rem 0;position: relative;font-size: .65rem;} 
@@ -648,15 +650,37 @@ a{display: inline-block;vertical-align: middle;}
 .goodsSelect ul li .font-box .right-fun input{width: 1rem;text-align: center;font-size: .8rem;pointer-events:none;color: #aaa;}
 .goodsSelect ul li .font-box .right-fun i{font-size: .9rem;}
 
-
-
-
 .g-footer-goodsSelect{}
 .g-footer-goodsSelect .b{font-size: .9rem;}
 .g-footer-goodsSelect span+span{margin-left: .5rem;font-size: .6rem;}
 
+/*消费现金*/
+.consumptionCash{font-size: .65rem;}
+.consumptionCash .g-big-banner{overflow:hidden;}
+.consumptionCash .g-big-banner .font-box .number span.small{font-size: .7rem;margin-left: 5px;}
+.consumptionCash .g-big-banner .getCash{background: none;top: 3rem;right: -.5rem;padding: 0 .5rem 0 0;}
+.consumptionCash .g-big-banner .getCash img{width: 5rem;}
+.consumptionCash .g-title{background: #fff;}
+.consumptionCash .g-title .fr{right: .5rem;}
 
 
+.consumptionCash .g-card{} 
+.consumptionCash .g-card.unfinished{position: relative;}
+.consumptionCash .g-card.unfinished:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,.6);z-index: 1;}
+.consumptionCash .g-card.unfinished:after{content: '';display: block;position: absolute;background: url('../images/8yuan.png') no-repeat;width: 8rem;height: 1.5rem;top: 50%;left: 50%;z-index: 1;background-size: 8rem;visibility: visible;margin: -.75rem 0 0 -4rem;}
+.consumptionCash .g-card .img-box{float: left;position: relative;} 
+.consumptionCash .g-card .img-box img{width: 6rem; } 
+.consumptionCash .g-card .img-box.djh:before{content: '';display: block;position: absolute;left: -.1rem;top: -.2rem;background: url('../images/icon/djh.png') no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;} 
+.consumptionCash .g-card .img-box span{position: absolute; left: .75rem; right: 1.25rem; top: .75rem; color: #fa6f7f; font-weight: bold; text-align: center; } 
+.consumptionCash .g-card .img-box span i{font-size: 1.5rem; margin-left: .4rem; } 
+.consumptionCash .g-card .font-box{overflow: hidden;font-size: .6rem;line-height: 1.1rem;padding: .3rem 0 .5rem;} 
+.consumptionCash .g-card .font-box .time{border-bottom: 1px dashed #ddd; } 
+.consumptionCash .g-card .font-box p{}
+.consumptionCash .g-card .font-box .g-btn{font-size: .55rem; width: auto; padding: 0 .75rem; line-height: 1.25rem; height: 1.25rem; float: right; margin-top: .5rem; }
+.consumptionCash .no-data{text-align: center; padding: 1rem .5rem; } 
+.consumptionCash .no-data img{width: 6rem; margin: .5rem; } 
+.consumptionCash .no-data p{} 
+.consumptionCash .no-data .g-btn{margin-top: 1rem;width: 80%;line-height: 1.5rem;height: 1.5rem;}
 
 
 
