@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>消费现金奖励</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="consumptionCash-reward">
+            <div class="g-big-banner">
+                <img src="images/consumptionCash_reward.png" alt="">
+            </div>
+            <div class="g-row">
+                <div class="g-card recommend">
+                    <a href="" class="clearfix">
+                        <div class="img-box">
+                            <img src="images/product_5.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <strong>猕猴桃（30个/箱）</strong>
+                            <p>黄心猕猴桃新鲜水果奇异果</p>
+                            <span class="ed">原价：¥22.8</span>
+                            <div class="ing">¥8.00</div>
+                        </div>
+                    </a>
+                    <a href="" class="clearfix">
+                        <div class="img-box">
+                            <img src="images/product_2.png" alt="">
+                        </div>
+                        <div class="font-box">
+                            <strong>猕猴桃（30个/箱）</strong>
+                            <p>黄心猕猴桃新鲜水果奇异果</p>
+                            <span class="ed">原价：¥22.8</span>
+                            <div class="ing">¥8.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="process">
+                    <div class="title">领取流程</div>
+                    <div class="g-card ">
+                        <div class="border clearfix">
+                            <span class="t">步骤①</span>
+                            <div class="img-box" style="margin-top: 2rem;">
+                                <div class="card djh">
+                                    <img src="images/icon/jh-price2.png" alt="">
+                                    <span>¥<i>8</i></span>
+                                </div>
+                            </div>
+                            <div class="font-box">
+                                通过<span class="f-red">线上完成下单</span class="f-red">或<span>线下扫码方式</span>获赠8元<span class="f-red">待激活</span>现金；
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-card ">
+                        <div class="border clearfix">
+                            <span class="t">步骤②</span>
+                            <div class="img-box">
+                                <div class="card djh">
+                                    <img src="images/icon/jh-price2.png" alt="">
+                                    <span>¥<i>8</i></span>
+                                </div>
+                                <img src="images/icon/add.png" alt="" class="add">
+                                <div class="card jh">
+                                    <img src="images/icon/jh-price2.png" alt="">
+                                    <span>¥<i>50</i></span>
+                                </div>
+                            </div>
+                            <div class="font-box">
+                                从获赠8元现金的时间 起，累计平台消费自营 商品达到50元，即可领 取； 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="g-card ">
+                        <div class="border clearfix">
+                            <span class="t">步骤③</span>
+                            <div class="img-box" style="margin-top: 2rem">
+                                <div class="card jh">
+                                    <img src="images/icon/jh-price2.png" alt="">
+                                    <span>¥<i>50</i></span>
+                                </div>
+                            </div>
+                            <div class="font-box">从领取50元的时间起，累计平台消费自营商品 达到400元，即领取可 提现的50元现金； </div>
+                        </div>
+                    </div>
+                    <div class="g-card ">
+                        <div class="border clearfix">
+                            <span class="t">步骤④</span>
+                            <div class="img-box">
+                                <img src="images/tx1.png" alt="">
+                            </div>
+                            <div class="font-box">可提现现金将自动放入您的可提取现金中。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-footer g-fixed">
+        <div class="g-col2">
+            <a class="g-btn">返回</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
