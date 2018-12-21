@@ -657,7 +657,7 @@ a{display: inline-block;vertical-align: middle;}
 /*消费现金*/
 .consumptionCash{font-size: .65rem;}
 .consumptionCash .g-big-banner{overflow:hidden;}
-.consumptionCash .g-big-banner .font-box .number span.small{font-size: .7rem;margin-left: 5px;}
+.consumptionCash .g-big-banner .font-box .number span.small{font-size: .6rem;margin-left: 5px;display: block;margin-top: -.25rem;}
 .consumptionCash .g-big-banner .getCash{background: none;top: 3rem;right: -.5rem;padding: 0 .5rem 0 0;}
 .consumptionCash .g-big-banner .getCash img{width: 5rem;}
 .consumptionCash .g-title{background: #fff;}
@@ -684,7 +684,7 @@ a{display: inline-block;vertical-align: middle;}
 
 /*消费现金奖励*/
 .consumptionCash-reward{font-size: .65rem;}
-.consumptionCash-reward .g-row{margin:0;padding: .5rem;background: red;background: -webkit-linear-gradient(#ebabac, #7757a0); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#ebabac, #7757a0); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#ebabac, #7757a0); /* Firefox 3.6 - 15 */background: linear-gradient(#ebabac, #7757a0); /* 标准的语法 */}
+.consumptionCash-reward .g-row{margin:0;padding: .5rem;background: #fe9ea9;background: -webkit-linear-gradient(#ffa6ac, #7757a0); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#ffa6ac, #7757a0); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#ffa6ac, #7757a0); /* Firefox 3.6 - 15 */background: linear-gradient(#ffa6ac, #7757a0); /* 标准的语法 */}
 .consumptionCash-reward .recommend{margin-bottom: .75rem;} 
 .consumptionCash-reward .recommend a{display: block;padding: .5rem 0;} 
 .consumptionCash-reward .recommend a+a{border-top: 1px dashed #ddd; } 
