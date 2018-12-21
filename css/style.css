@@ -704,13 +704,13 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash-reward .process .g-card .t{background: url('../images/bz_bg.png') no-repeat center;position: absolute;left: -.25rem;top: 1rem;color: #fff;width: 5.5rem;height: 1.5rem;line-height: 1.35rem;background-size: 6rem;padding: 0 .5rem;}
 .consumptionCash-reward .process .g-card .img-box{float: right;width: 7rem;text-align: center;} 
 .consumptionCash-reward .process .g-card .img-box .add{width: 1.25rem;} 
-.consumptionCash-reward .process .g-card .font-box{font-size: .55rem;overflow: hidden;position: absolute;left: .5rem;right: 7.5rem;top: 50%;transform: translateY(-50%);}
+.consumptionCash-reward .process .g-card .font-box{font-size: .55rem;overflow: hidden;position: absolute;left: .5rem;right: 8rem;top: 50%;transform: translateY(-50%);}
 .consumptionCash-reward .process .card{position: relative; } 
-.consumptionCash-reward .process .card img{width: 6rem; } 
-.consumptionCash-reward .process .card span{position: absolute;left: 4rem;right: 1rem;top: .6rem;color: #fa6f7f;font-weight: bold;text-align: center;} 
-.consumptionCash-reward .process .card span i{font-size: 1.1rem;} 
-.consumptionCash-reward .process .card.djh:before{content: '';display: block;position: absolute;left: .25rem;top: -.2rem;background: url(../images/icon/djh.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
-.consumptionCash-reward .process .card.jh:before{content: '';display: block;position: absolute;left: .2rem;top: -.2rem;background: url(../images/icon/ktx.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
+.consumptionCash-reward .process .card img{width: 8rem;} 
+.consumptionCash-reward .process .card span{position: absolute;left: 4rem;right: .5rem;top: 1rem;color: #fa6f7f;font-weight: bold;text-align: center;} 
+.consumptionCash-reward .process .card span i{font-size: .9rem;} 
+.consumptionCash-reward .process .card.djh:before{content: '';display: block;position: absolute;left: -.25rem;top: -.2rem;background: url(../images/icon/djh.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
+.consumptionCash-reward .process .card.jh:before{content: '';display: block;position: absolute;left: -.25rem;top: -.2rem;background: url(../images/icon/ktx.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
 
 
 
