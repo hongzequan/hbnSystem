@@ -13,6 +13,8 @@ a{display: inline-block;vertical-align: middle;}
 .f-gray{color: #919191 !important;;}
 .f-green{color: #2ca935 !important;;}
 .f-orange{color: #fe9e2d !important;}
+.f-weight{font-weight: bold;}
+.f-underline{text-decoration: underline;}
 
 .f-line{text-decoration:line-through;color: #aaa;}
 .f-black{color: #333;}
@@ -684,7 +686,7 @@ a{display: inline-block;vertical-align: middle;}
 
 /*消费现金奖励*/
 .consumptionCash-reward{font-size: .65rem;}
-.consumptionCash-reward .g-row{margin:0;padding: .5rem;background: #fe9ea9;background: -webkit-linear-gradient(#ffa6ac, #7757a0); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#ffa6ac, #7757a0); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#ffa6ac, #7757a0); /* Firefox 3.6 - 15 */background: linear-gradient(#ffa6ac, #7757a0); /* 标准的语法 */}
+.consumptionCash-reward .g-row{margin:0;padding: .5rem;background: #fe9ea9;background: -webkit-linear-gradient(#8ca7ff, #7569ff); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(#8ca7ff, #7569ff); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(#8ca7ff, #7569ff); /* Firefox 3.6 - 15 */background: linear-gradient(#8ca7ff, #7569ff); /* 标准的语法 */}
 .consumptionCash-reward .recommend{margin-bottom: .75rem;} 
 .consumptionCash-reward .recommend a{display: block;padding: .5rem 0;} 
 .consumptionCash-reward .recommend a+a{border-top: 1px dashed #ddd; } 
@@ -696,7 +698,8 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash-reward .recommend .font-box .ed{position: absolute; left: 0; bottom: 0; color: #aaa; text-decoration: line-through; font-size: .55rem; } 
 .consumptionCash-reward .recommend .font-box .ing{background: url('../images/jbj.png') no-repeat center;position: absolute;right: 0;bottom: 0;width: 2.7rem;height: 2.7rem;background-size: 3rem;color: #fff;text-align: center;line-height: 3.7rem;font-size: .6rem;}
 .consumptionCash-reward .process{}
-.consumptionCash-reward .process .title{background: url('../images/lc_bg.png') no-repeat center;color: #e96464;margin-bottom: .55rem;text-align: center;height: 2rem;line-height: 1.8rem;background-size: 11rem;}
+.consumptionCash-reward .process .title{position: relative;background: url('../images/lc_bg.png') no-repeat center;color: #766bff;margin-bottom: .55rem;text-align: center;height: 2rem;line-height: 1.8rem;background-size: 11rem;}
+.consumptionCash-reward .process .title:before{content: '';display: block;position: absolute;left: -.5rem;top: -.5rem;right: -.5rem;bottom: -.5rem;background: url('../images/yun.png') no-repeat;background-size: cover;}
 .consumptionCash-reward .process .g-card{position: relative;border:1px dashed #fd7482;min-height: 9rem;} 
 .consumptionCash-reward .process .g-card .border{padding: .75rem 0;}
 .consumptionCash-reward .process .g-card+.g-card:before{content: '';display: block;background: url('../images/icon/bs.png') no-repeat;position: absolute;left: 1rem;top: -1.35rem;width: .75rem;height: 2.25rem;background-size: .75rem;z-index: 1;}
@@ -712,6 +715,34 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash-reward .process .card.djh:before{content: '';display: block;position: absolute;left: -.25rem;top: -.2rem;background: url(../images/icon/djh.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
 .consumptionCash-reward .process .card.jh:before{content: '';display: block;position: absolute;left: -.25rem;top: -.2rem;background: url(../images/icon/ktx.png) no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;}
 
+/*团购平台*/
+.g-img-detail-title{position: relative;padding-top: 1rem;background: #fff;margin-top: 1rem;}
+.g-img-detail-title:before{content: '';display: block;background: url('../images/icon/imgtext.png') no-repeat;position: absolute;top: -1rem;left: .5rem;width: 5rem;height: 1.5rem;background-size: 5rem;}
+
+.footer-groupBuyingPlatform{text-align: left; font-size: .6rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } 
+.footer-groupBuyingPlatform img{vertical-align: middle;width: 1.5rem;}
+
+.groupBuyingPlatform{font-size: .65rem;}
+.groupBuyingPlatform .g-tips{font-size: .55rem;}
+.groupBuyingPlatform .g-big-banner{position: relative;}
+.groupBuyingPlatform .g-big-banner .font-box{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;width: auto;height: auto;}
+.groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1.4rem;} 
+.groupBuyingPlatform .g-card .img-box{position: relative;margin-bottom: 1.5rem;}
+.groupBuyingPlatform .g-card .img-box:before{content: '';display: block;position: absolute;right: 0;bottom: -1.5rem;background: url('../images/blue/follow.png') no-repeat;width: 3.5rem;height: 3.5rem;background-size: 3.5rem;}
+.groupBuyingPlatform .g-card .img-box img{width: 90%;margin: 0 auto;display: block;}
+.groupBuyingPlatform .g-card .font-box{position: relative; display: block; } 
+.groupBuyingPlatform .g-card .font-box h3{} 
+.groupBuyingPlatform .g-card .font-box .price{font-size: .55rem; color: #aaa; text-decoration: line-through; position: absolute; right: 0; top: .15rem; display: block; } 
+.groupBuyingPlatform .g-card .font-box p{color: #aaa; font-size: .5rem; margin-bottom: .25rem; } 
+.groupBuyingPlatform .g-card .font-box .user{font-size: .6rem;} 
+.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute; right: -.5rem; bottom: -.5rem; background: #7c97fa; color: #fff; padding: .25rem .5rem; border-radius: 12px 0 0 0; }
+
+.float-info{position: absolute;top: .5rem;left: -100%;transition: all .5s;} 
+.float-info.on{left: .5rem;}
+.float-info .user-box{width: 2rem; height: 2rem; border-radius: 100%; text-align: center; overflow: hidden; border: 2px solid #87a2fe; position: absolute; z-index: 1; background: #829fff; margin-top: -.25rem; } 
+.float-info .user-box img{width: 100%; height: 100%; object-fit: cover; } 
+.float-info .font-box{background: #87a2fe; color: #fff; border-radius: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: .25rem 1rem .25rem 2.25rem; }
+.float-info .font-box span{margin-left: 4px;}
 
 
 

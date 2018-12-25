@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>团购平台</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top"  style="padding-bottom: 4.5rem;">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="groupBuyingPlatform">
+            <div class="g-big-banner">
+                <img src="images/blue/top_bg.png" alt="">
+                <div class="font-box">
+                    距离结束仅剩：13 时 40 分 22 秒
+                </div>
+            </div>
+            <div class="g-card">
+                <div class="img-box more">
+                    <img src="images/product_2.png" alt="">
+                </div>
+                <dov class="font-box">
+                    <h3>好帮你洗衣液</h3>
+                    <span class="price">市场价：¥29.8</span>
+                    <p>高效全能洗衣液：除螨杀菌、贴身柔软</p>
+                    <div class="user">
+                        已有<span class="f-red">3646人</span>成功拼团
+                    </div>
+                    <div class="newPrice">
+                        拼团价：¥9.8
+                    </div>
+                </dov>
+                <!-- <div class="float-info">
+                    <div class="user-box">
+                        <img src="images/user/1.jpg" alt="">
+                    </div>
+                    <div class="font-box">
+                        权志龙完成了拼图
+                        <span>1分钟前</span>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="g-img-detail g-img-detail-title">
+                <img src="images/text-detail/producDetail.jpg" alt="">
+            </div>
+            <div class="g-tips g-subfooter">现在<span class="f-red">参与拼团再送39.6元现金</span>，<a href="" class="f-weight f-underline">点击查看说明</a></div>
+        </div>
+    </div>
+
+    <div class="g-footer g-fixed g-footer-blue">
+        <div class="g-col2 footer-groupBuyingPlatform" >
+            <img src="images/captain.png" alt="">
+            团长：<i>权志龙</i>
+        </div>
+        <div class="g-col">
+            <a class="g-btn">马上参团</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var userArr=[
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙1',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙2',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙3',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙4',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙1',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙2',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙3',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙4',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙1',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙2',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙3',
+                'time':'1分钟前'
+            },
+            {
+                "iconUrl":'./images/user/1.jpg',
+                'username':'权志龙4',
+                'time':'1分钟前'
+            },
+        ];
+        function getHtml(){
+            var html='';
+            var d='';
+            for (var i = 0; i < userArr.length; i++) {
+                html+='<div class="float-info"><div class="user-box">';
+                html+='<img src="'+userArr[i].iconUrl+'"">';
+                html+='</div>';
+                html+='<div class="font-box">';
+                html+=userArr[i].username;
+                html+='<span>'+userArr[i].time+'</span>';
+                html+='</div></div>';
+                d=i;
+                setData(d,html);
+                html='';
+            }
+        };
+
+        function setData(d,html){
+            setTimeout(function(){
+                if($('.float-info').length>0){
+                    $('.float-info').remove();
+                    $('.groupBuyingPlatform .g-card').append(html);
+                    setTimeout(function(){
+                         $('.float-info').addClass('on');
+                    },500);
+                }else{
+                    $('.groupBuyingPlatform .g-card').append(html);
+                    setTimeout(function(){
+                         $('.float-info').addClass('on');
+                    },500);
+                };
+            },d*5000)
+        }
+        $(function(){
+            getHtml()
+        })
+    </script>
+</body>
+
+</html>
