@@ -700,7 +700,7 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash-reward .process{}
 .consumptionCash-reward .process .title{position: relative;background: url('../images/lc_bg.png') no-repeat center;color: #766bff;margin-bottom: .55rem;text-align: center;height: 2rem;line-height: 1.8rem;background-size: 11rem;}
 .consumptionCash-reward .process .title:before{content: '';display: block;position: absolute;left: -.5rem;top: -.5rem;right: -.5rem;bottom: -.5rem;background: url('../images/yun.png') no-repeat;background-size: cover;}
-.consumptionCash-reward .process .g-card{position: relative;border:1px dashed #fd7482;min-height: 9rem;} 
+.consumptionCash-reward .process .g-card{position: relative;border:1px dashed #86a3ff;min-height: 9rem;} 
 .consumptionCash-reward .process .g-card .border{padding: .75rem 0;}
 .consumptionCash-reward .process .g-card+.g-card:before{content: '';display: block;background: url('../images/icon/bs.png') no-repeat;position: absolute;left: 1rem;top: -1.35rem;width: .75rem;height: 2.25rem;background-size: .75rem;z-index: 1;}
 .consumptionCash-reward .process .g-card+.g-card:after{content: '';display: block;background: url(../images/icon/bs.png) no-repeat;position: absolute;right: 1rem;top: -1.35rem;width: .75rem;height: 2.25rem;background-size: .75rem;z-index: 1;visibility: visible;}
