@@ -40,8 +40,8 @@
         <div class="groupBuyingPlatform">
             <div class="g-big-banner">
                 <img src="images/blue/top_bg.png" alt="">
-                <div class="font-box">
-                    距离结束仅剩：13 时 40 分 22 秒
+                <div class="font-box countdown">
+                    距离结束仅剩：<span class="days">0</span>天 <span class="hours">0</span> 时 <span class="minutes">0</span> 分 <span class="seconds">0</span> 秒
                 </div>
             </div>
             <div class="g-card">
@@ -89,6 +89,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
+
+    <script src="js/jquery.downCount.js"></script>
     <script>
         var userArr=[
             {
@@ -188,6 +190,14 @@
         $(function(){
             getHtml()
         })
+
+        // 倒计时插件
+        $('.countdown').downCount({
+            date: '12/26/2018 14:00:00',
+            offset: +8
+        }, function () {
+           
+        });
     </script>
 </body>
 
