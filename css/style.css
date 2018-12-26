@@ -728,7 +728,8 @@ a{display: inline-block;vertical-align: middle;}
 .groupBuyingPlatform .g-big-banner .font-box{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;width: auto;height: auto;}
 .groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1.4rem;} 
 .groupBuyingPlatform .g-card .img-box{position: relative;margin-bottom: 1.5rem;}
-.groupBuyingPlatform .g-card .img-box:before{content: '';display: block;position: absolute;right: 0;bottom: -1.5rem;background: url('../images/blue/follow.png') no-repeat;width: 3.5rem;height: 3.5rem;background-size: 3.5rem;z-index: 2;}
+.groupBuyingPlatform .g-card .more{position: absolute;right: 0;bottom: -1.5rem;width: 3.5rem;height: 3.5rem;z-index: 2;}
+.groupBuyingPlatform .g-card .more img{width: 100%;}
 .groupBuyingPlatform .g-card .img-box img{width: 90%;margin: 0 auto;display: block;}
 .groupBuyingPlatform .g-card .font-box{position: relative; display: block; } 
 .groupBuyingPlatform .g-card .font-box h3{} 
