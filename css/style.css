@@ -668,7 +668,6 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash .g-card{} 
 .consumptionCash .g-card.unfinished{position: relative;}
 .consumptionCash .g-card.unfinished:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,.6);z-index: 1;}
-.consumptionCash .g-card.unfinished:after{content: '';display: block;position: absolute;background: url('../images/8yuan.png') no-repeat;width: 8rem;height: 1.5rem;top: 50%;left: 50%;z-index: 1;background-size: 8rem;visibility: visible;margin: -.75rem 0 0 -4rem;}
 .consumptionCash .g-card .img-box{float: left;position: relative;} 
 .consumptionCash .g-card .img-box img{width: 6rem; } 
 .consumptionCash .g-card .img-box.djh:before{content: '';display: block;position: absolute;left: -.1rem;top: -.2rem;background: url('../images/icon/djh.png') no-repeat center;width: 2.5rem;height: 2.25rem;background-size: 2.25rem;} 
@@ -678,6 +677,7 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash .g-card .font-box .time{border-bottom: 1px dashed #ddd; } 
 .consumptionCash .g-card .font-box p{}
 .consumptionCash .g-card .font-box .g-btn{font-size: .55rem; width: auto; padding: 0 .75rem; line-height: 1.25rem; height: 1.25rem; float: right; margin-top: .5rem; }
+.consumptionCash .g-card .money{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 1;color: #b27535;border: 1px solid #ad7400;background: -webkit-linear-gradient(top, #ffe600 , #fef863);background: -o-linear-gradient(top, #ffe600, #fef863);background: -moz-linear-gradient(top, #ffe600, #fef863);background: linear-gradient(to top, #ffe600 , #fef863);padding: .25rem 1rem;border-radius: 1rem;font-size: .7rem;}
 .consumptionCash .no-data{text-align: center; padding: 1rem .5rem; } 
 .consumptionCash .no-data img{width: 6rem; margin: .5rem; } 
 .consumptionCash .no-data p{} 
