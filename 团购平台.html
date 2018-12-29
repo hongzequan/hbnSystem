@@ -11,7 +11,7 @@
     <title>团购平台</title>
     <link rel="stylesheet" href="css/iconfont/iconfont.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
     <script>
     (function(doc, win) {
         var docE1 = doc.documentElement,
@@ -38,13 +38,13 @@
     <!-- 所有的页面都写在这个class底下 -->
     <div class="wrap">
         <div class="groupBuyingPlatform">
-            <div class="g-big-banner">
+            <div class="g-big-banner g-top-fixed">
                 <img src="images/blue/top_bg.png" alt="">
                 <div class="font-box countdown">
                     距离结束仅剩：<span class="days">0</span>天 <span class="hours">0</span> 时 <span class="minutes">0</span> 分 <span class="seconds">0</span> 秒
                 </div>
             </div>
-            <div class="g-card">
+            <div class="g-card g-top-fixed-row">
                 <div class="img-box">
                     <div class="banner">
                         <div class="swiper-container">
@@ -171,7 +171,7 @@
                 html+='<div class="float-info"><div class="user-box">';
                 html+='<img src="'+userArr[i].iconUrl+'"">';
                 html+='</div>';
-                html+='<div class="font-box">';
+                html+='<div class="text-box">';
                 html+=userArr[i].username;
                 html+='<span>'+userArr[i].time+'</span>';
                 html+='</div></div>';

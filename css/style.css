@@ -724,26 +724,27 @@ a{display: inline-block;vertical-align: middle;}
 
 .groupBuyingPlatform{font-size: .65rem;}
 .groupBuyingPlatform .g-tips{font-size: .55rem;}
-.groupBuyingPlatform .g-big-banner{position: relative;}
+.groupBuyingPlatform .g-big-banner{position: fixed;padding: 0;}
 .groupBuyingPlatform .g-big-banner .font-box{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;width: auto;height: auto;}
-.groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1.4rem;} 
-.groupBuyingPlatform .g-card .img-box{position: relative;margin-bottom: 1.5rem;}
-.groupBuyingPlatform .g-card .more{position: absolute;right: 0;bottom: -1.5rem;width: 3.5rem;height: 3.5rem;z-index: 2;}
+.groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1rem;z-index: 0;margin-top: 3rem;} 
+.groupBuyingPlatform .g-card .img-box{position: relative;}
+.groupBuyingPlatform .g-card .more{position: absolute;right: 0;bottom: 2rem;width: 3.5rem;height: 3.5rem;z-index: 2;}
 .groupBuyingPlatform .g-card .more img{width: 100%;}
-.groupBuyingPlatform .g-card .img-box img{width: 90%;margin: 0 auto;display: block;}
-.groupBuyingPlatform .g-card .font-box{position: relative; display: block; } 
+.groupBuyingPlatform .g-card .img-box img{width: 100%;margin: 0 auto;display: block;}
+.groupBuyingPlatform .g-card .font-box{position: relative;display: block;margin-top: -2rem;z-index: 2;background: #fff;box-shadow: 0 -0.216506rem 0.6rem rgba(51, 51, 51, 0.1);padding: .5rem;} 
 .groupBuyingPlatform .g-card .font-box h3{} 
-.groupBuyingPlatform .g-card .font-box .price{font-size: .55rem; color: #aaa; text-decoration: line-through; position: absolute; right: 0; top: .15rem; display: block; } 
+.groupBuyingPlatform .g-card .font-box .price{font-size: .55rem;color: #aaa;text-decoration: line-through;position: absolute;right: .5rem;top: .5rem;display: block;} 
 .groupBuyingPlatform .g-card .font-box p{color: #aaa; font-size: .5rem; margin-bottom: .25rem; } 
 .groupBuyingPlatform .g-card .font-box .user{font-size: .6rem;} 
-.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute; right: -.5rem; bottom: -.5rem; background: #7c97fa; color: #fff; padding: .25rem .5rem; border-radius: 12px 0 0 0; }
+.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute; right: 0; bottom: 0; background: #7c97fa; color: #fff; padding: .25rem .5rem; border-radius: 12px 0 0 0; }
 
 .float-info{position: absolute;top: .5rem;left: -100%;transition: all .5s;z-index: 2;} 
 .float-info.on{left: .5rem;}
 .float-info .user-box{width: 2rem; height: 2rem; border-radius: 100%; text-align: center; overflow: hidden; border: 2px solid #87a2fe; position: absolute; z-index: 1; background: #829fff; margin-top: -.25rem; } 
 .float-info .user-box img{width: 100%; height: 100%; object-fit: cover; } 
-.float-info .font-box{background: #87a2fe; color: #fff; border-radius: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: .25rem 1rem .25rem 2.25rem; }
-.float-info .font-box span{margin-left: 4px;}
+.float-info .text-box{background: #87a2fe; color: #fff; border-radius: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: .25rem 1rem .25rem 2.25rem; }
+.float-info .text-box span{margin-left: 4px;}
+
 
 
 
