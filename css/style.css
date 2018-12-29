@@ -677,7 +677,7 @@ a{display: inline-block;vertical-align: middle;}
 .consumptionCash .g-card .font-box .time{border-bottom: 1px dashed #ddd; } 
 .consumptionCash .g-card .font-box p{}
 .consumptionCash .g-card .font-box .g-btn{font-size: .55rem; width: auto; padding: 0 .75rem; line-height: 1.25rem; height: 1.25rem; float: right; margin-top: .5rem; }
-.consumptionCash .g-card .money{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 1;color: #b27535;border: 1px solid #ad7400;background: -webkit-linear-gradient(top, #ffe600 , #fef863);background: -o-linear-gradient(top, #ffe600, #fef863);background: -moz-linear-gradient(top, #ffe600, #fef863);background: linear-gradient(to top, #ffe600 , #fef863);padding: .25rem 1rem;border-radius: 1rem;font-size: .7rem;}
+.consumptionCash .g-card .money{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 1;color: #b27535;border: 1px solid #ad7400;background: -webkit-linear-gradient(top, #ffe600 , #fef863);background: -o-linear-gradient(top, #ffe600, #fef863);background: -moz-linear-gradient(top, #ffe600, #fef863);background: linear-gradient(to top, #ffe600 , #fef863);padding: .25rem 1rem;border-radius: 1rem;font-size: .7rem;white-space: nowrap;}
 .consumptionCash .no-data{text-align: center; padding: 1rem .5rem; } 
 .consumptionCash .no-data img{width: 6rem; margin: .5rem; } 
 .consumptionCash .no-data p{} 
@@ -724,19 +724,19 @@ a{display: inline-block;vertical-align: middle;}
 
 .groupBuyingPlatform{font-size: .65rem;}
 .groupBuyingPlatform .g-tips{font-size: .55rem;}
-.groupBuyingPlatform .g-big-banner{position: fixed;padding: 0;}
+.groupBuyingPlatform .g-big-banner{position: fixed;padding: 0;height: 2rem;background: url('../images/blue/top_bg.png') no-repeat center;background-size: 16rem;}
 .groupBuyingPlatform .g-big-banner .font-box{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;width: auto;height: auto;}
-.groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1rem;z-index: 0;margin-top: 3rem;} 
+.groupBuyingPlatform .g-card{border-radius: 0;margin-bottom: 1.5rem;padding-top: 1rem;z-index: 0;margin-top: 2rem;} 
 .groupBuyingPlatform .g-card .img-box{position: relative;}
 .groupBuyingPlatform .g-card .more{position: absolute;right: 0;bottom: 2rem;width: 3.5rem;height: 3.5rem;z-index: 2;}
 .groupBuyingPlatform .g-card .more img{width: 100%;}
 .groupBuyingPlatform .g-card .img-box img{width: 100%;margin: 0 auto;display: block;}
-.groupBuyingPlatform .g-card .font-box{position: relative;display: block;margin-top: -2rem;z-index: 2;background: #fff;box-shadow: 0 -0.216506rem 0.6rem rgba(51, 51, 51, 0.1);padding: .5rem;} 
+.groupBuyingPlatform .g-card .font-box{position: relative;display: block;margin-top: -1.5rem;z-index: 2;background: #fff;box-shadow: 0 -0.216506rem 0.6rem rgba(51, 51, 51, 0.1);padding: .5rem;} 
 .groupBuyingPlatform .g-card .font-box h3{} 
 .groupBuyingPlatform .g-card .font-box .price{font-size: .55rem;color: #aaa;text-decoration: line-through;position: absolute;right: .5rem;top: .5rem;display: block;} 
 .groupBuyingPlatform .g-card .font-box p{color: #aaa; font-size: .5rem; margin-bottom: .25rem; } 
 .groupBuyingPlatform .g-card .font-box .user{font-size: .6rem;} 
-.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute; right: 0; bottom: 0; background: #7c97fa; color: #fff; padding: .25rem .5rem; border-radius: 12px 0 0 0; }
+.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute;right: 0;bottom: 0;background: #7c97fa;color: #fff;padding: .25rem .5rem;border-radius: .5rem 0 0 0;background: -webkit-linear-gradient(left, #ff5252 , #f7988b); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #ff5252, #f7988b); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #ff5252, #f7988b); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #ff5252 , #f7988b); /* 标准的语法 */}
 
 .float-info{position: absolute;top: .5rem;left: -100%;transition: all .5s;z-index: 2;} 
 .float-info.on{left: .5rem;}
