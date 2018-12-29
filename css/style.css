@@ -732,11 +732,11 @@ a{display: inline-block;vertical-align: middle;}
 .groupBuyingPlatform .g-card .more img{width: 100%;}
 .groupBuyingPlatform .g-card .img-box img{width: 100%;margin: 0 auto;display: block;}
 .groupBuyingPlatform .g-card .font-box{position: relative;display: block;margin-top: -1.5rem;z-index: 2;background: #fff;box-shadow: 0 -0.216506rem 0.6rem rgba(51, 51, 51, 0.1);padding: .5rem;} 
-.groupBuyingPlatform .g-card .font-box h3{} 
-.groupBuyingPlatform .g-card .font-box .price{font-size: .55rem;color: #aaa;text-decoration: line-through;position: absolute;right: .5rem;top: .5rem;display: block;} 
+.groupBuyingPlatform .g-card .font-box h3{margin-bottom: .25rem; } 
+.groupBuyingPlatform .g-card .font-box .price{font-size: .55rem;color: #aaa;text-decoration: line-through;position: absolute;right: .5rem;bottom: .5rem;display: block;}
 .groupBuyingPlatform .g-card .font-box p{color: #aaa; font-size: .5rem; margin-bottom: .25rem; } 
 .groupBuyingPlatform .g-card .font-box .user{font-size: .6rem;} 
-.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute;right: 0;bottom: 0;background: #7c97fa;color: #fff;padding: .25rem .5rem;border-radius: .5rem 0 0 0;background: -webkit-linear-gradient(left, #ff5252 , #f7988b); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #ff5252, #f7988b); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #ff5252, #f7988b); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #ff5252 , #f7988b); /* 标准的语法 */}
+.groupBuyingPlatform .g-card .font-box .newPrice{position: absolute;right: 0;top: .5rem;background: #7c97fa;color: #fff;padding: .15rem .5rem;border-radius: 1rem 0 0 1rem;background: -webkit-linear-gradient(left, #ff5252 , #f7988b); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, #ff5252, #f7988b); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, #ff5252, #f7988b); /* Firefox 3.6 - 15 */background: linear-gradient(to right, #ff5252 , #f7988b); /* 标准的语法 */}
 
 .float-info{position: absolute;top: .5rem;left: -100%;transition: all .5s;z-index: 2;} 
 .float-info.on{left: .5rem;}
@@ -744,6 +744,8 @@ a{display: inline-block;vertical-align: middle;}
 .float-info .user-box img{width: 100%; height: 100%; object-fit: cover; } 
 .float-info .text-box{background: #87a2fe; color: #fff; border-radius: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: .25rem 1rem .25rem 2.25rem; }
 .float-info .text-box span{margin-left: 4px;}
+
+
 
 
 
