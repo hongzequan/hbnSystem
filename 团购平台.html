@@ -9,32 +9,33 @@
     <meta name="browsermode" content="application">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>团购平台</title>
-    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/iconfont/iconfont.css?v=11">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.0/skins/default/aliplayer-min.css">
+    <link rel="stylesheet" href="css/style.css?v=11">
     <script>
-    (function(doc, win) {
-        var docE1 = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function() {
-                var clientWidth = docE1.clientWidth;
-                if (!clientWidth) return;
-                if (clientWidth > 1024) {
-                    docE1.style.fontSize = '22px'
-                    return
-                }
-                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
-            };
+        (function(doc, win) {
+            var docE1 = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docE1.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth > 1024) {
+                        docE1.style.fontSize = '22px'
+                        return
+                    }
+                    docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
 
-        if (!doc.addEventListener) return;
-        recalc();
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
+            if (!doc.addEventListener) return;
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
     </script>
 </head>
 
-<body class="g-top"  style="padding-bottom: 4.5rem;">
+<body class="g-top" style="padding-bottom: 4.5rem;">
     <!-- 所有的页面都写在这个class底下 -->
     <div class="wrap">
         <div class="groupBuyingPlatform">
@@ -45,13 +46,12 @@
             </div>
             <div class="g-card g-top-fixed-row">
                 <div class="img-box">
-                    <div class="banner">
+                    <!-- 需要你们帮忙判断下，是否有存在视频，有的话，添加class="videoPlay" -->
+                    <div class="banner videoPlay">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="prism-player" id="player-con"></div></div>
                                 <div class="swiper-slide"><img src="images/product_1.png" alt=""></div>
-                                <div class="swiper-slide"><img src="images/product_2.png" alt=""></div>
-                                <div class="swiper-slide"><img src="images/product_3.png" alt=""></div>
-                                <div class="swiper-slide"><img src="images/product_4.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -81,18 +81,16 @@
             <div class="tips">
                 <img src="images/icon/shuoming.png" alt="">目前团购订单仅支持自提。
             </div>
-
             <div class="g-img-detail g-img-detail-title">
-                <img src="images/text-detail/producDetail.jpg" alt="">
+                <img src="https://hongzequan.oss-cn-shenzhen.aliyuncs.com/demo1/producDetail.jpg" alt="">
             </div>
             <div class="g-tips g-subfooter">现在<span class="f-red">参与拼团再送39.6元现金</span>，<a href="" class="f-weight f-underline">点击查看说明</a></div>
         </div>
     </div>
-
     <div class="g-footer g-fixed g-footer-blue">
-        <div class="g-col2 footer-groupBuyingPlatform" >
-            <img src="images/captain.png" alt="">
-            团长：<i>权志龙</i>
+        <div class="g-col2 footer-groupBuyingPlatform">
+            <img src="images/captain.png" alt=""> 团长：
+            <i>权志龙</i>
         </div>
         <div class="g-col">
             <a class="g-btn">马上参团</a>
@@ -100,116 +98,106 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/index.js"></script>
-
+    <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.0/aliplayer-min.js"></script>
+    <script src="js/index.js?v=11"></script>
     <script src="js/jquery.downCount.js"></script>
     <script>
-        var userArr=[
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙1',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙2',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙3',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙4',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙1',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙2',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙3',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙4',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙1',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙2',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙3',
-                'time':'1分钟前'
-            },
-            {
-                "iconUrl":'./images/user/1.jpg',
-                'username':'权志龙4',
-                'time':'1分钟前'
-            },
-        ];
-        function getHtml(){
-            var html='';
-            var d='';
+        var userArr = [{
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙1',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙2',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙3',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙4',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙1',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙2',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙3',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙4',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙1',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙2',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙3',
+            'time': '1分钟前'
+        }, {
+            "iconUrl": './images/user/1.jpg',
+            'username': '权志龙4',
+            'time': '1分钟前'
+        }, ];
+
+        function getHtml() {
+            var html = '';
+            var d = '';
             for (var i = 0; i < userArr.length; i++) {
-                html+='<div class="float-info"><div class="user-box">';
-                html+='<img src="'+userArr[i].iconUrl+'"">';
-                html+='</div>';
-                html+='<div class="text-box">';
-                html+=userArr[i].username;
-                html+='<span>'+userArr[i].time+'</span>';
-                html+='</div></div>';
-                d=i;
-                setData(d,html);
-                html='';
+                html += '<div class="float-info"><div class="user-box">';
+                html += '<img src="' + userArr[i].iconUrl + '"">';
+                html += '</div>';
+                html += '<div class="text-box">';
+                html += userArr[i].username;
+                html += '<span>' + userArr[i].time + '</span>';
+                html += '</div></div>';
+                d = i;
+                setData(d, html);
+                html = '';
             }
         };
 
-        function setData(d,html){
-            setTimeout(function(){
-                if($('.float-info').length>0){
+        function setData(d, html) {
+            setTimeout(function() {
+                if ($('.float-info').length > 0) {
                     $('.float-info').remove();
                     $('.groupBuyingPlatform .g-card').append(html);
-                    setTimeout(function(){
-                         $('.float-info').addClass('on');
-                    },500);
-                }else{
+                    setTimeout(function() {
+                        $('.float-info').addClass('on');
+                    }, 500);
+                } else {
                     $('.groupBuyingPlatform .g-card').append(html);
-                    setTimeout(function(){
-                         $('.float-info').addClass('on');
-                    },500);
+                    setTimeout(function() {
+                        $('.float-info').addClass('on');
+                    }, 500);
                 };
-            },d*5000)
+            }, d * 5000)
         }
-        $(function(){
+        $(function() {
             getHtml()
         })
-
         // 倒计时插件
         $('.countdown').downCount({
             date: '12/26/2018 14:00:00',
             offset: +8
-        }, function () {
-           
+        }, function() {
+
         });
+        // 当存在视频时候，第一个参数表示为视频初始化，第二个参数为视频地址，第三个参数为视频封面
+        initBannerSwiper(false,'https://image.sumaotong.com/Public/Web/sumaotong.mp4','images/product_1.png')
+
     </script>
 </body>
 
