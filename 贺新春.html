@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>好帮你欢迎您！福利多多！快乐多多！</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.0/skins/default/aliplayer-min.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <img src="http://img.howbany.com/img/fldd_01.png">
+        <div class="hx-video">
+            <img src="images/hxVideo.png" alt="">
+            <div class="video-box">
+                <div class="prism-player" id="player-con"></div>
+            </div>
+            <div class="font-box">
+                衣旧焕新好帮你，除螨杀菌洗衣液<br>（七大功效合一）
+            </div>
+        </div>
+        <a href="/wx/member/open_member_jion"><img src="http://img.howbany.com/img/fldd_03.png"></a>
+        <a href="/wx/buyer/product/product_detail?product_sku_id=540193438314400&amp;seller_id=2"><img src="http://img.howbany.com/img/fldd_04.png"></a>
+        <a href="/wx/zhuti/xflmyl"><img src="http://img.howbany.com/img/fldd_05.png"></a>
+        <a href="/wx/toshare/2/00T00325"><img src="http://img.howbany.com/img/fldd_06.png"></a>
+        <a href="/wx/toshare/2/00T00278"><img src="http://img.howbany.com/img/fldd_07.png"></a>
+        <a href="/wx/buyer/cash/open_cash_red_packet"><img src="http://img.howbany.com/img/fldd_08.png"></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.0/aliplayer-min.js"></script>
+    <script>
+    var player = new Aliplayer({
+        "id": 'player-con', //视频div的id
+        "source": 'https://image.sumaotong.com/Public/Web/sumaotong.mp4', //视频的路径
+        "cover": 'images/cover.png', //视频封面
+        "width": "100%",
+        "height": "100%",
+        "autoplay": true,
+        "isLive": false,
+        "rePlay": false,
+        "playsinline": true,
+        "preload": true,
+        "controlBarVisibility": "hover",
+        "useH5Prism": true,
+        "skinLayout": [{
+                "name": "bigPlayButton",
+                "align": "blabs",
+                "x": 30,
+                "y": 80
+            },
+            {
+                "name": "H5Loading",
+                "align": "cc"
+            },
+            {
+                "name": "errorDisplay",
+                "align": "tlabs",
+                "x": 0,
+                "y": 0
+            },
+            {
+                "name": "infoDisplay"
+            },
+            {
+                "name": "tooltip",
+                "align": "blabs",
+                "x": 0,
+                "y": 56
+            },
+            {
+                "name": "thumbnail"
+            },
+            {
+                "name": "controlBar",
+                "align": "blabs",
+                "x": 0,
+                "y": 0,
+                "children": [{
+                        "name": "playButton",
+                        "align": "tl",
+                        "x": 15,
+                        "y": 12
+                    },
+                    {
+                        "name": "fullScreenButton",
+                        "align": "tr",
+                        "x": 10,
+                        "y": 12
+                    }
+                ]
+            }
+        ]
+    }, function(player) {
+        console.log("播放器创建了。");
+    });
+    </script>
+</body>
+
+</html>
