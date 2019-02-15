@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>商品选择</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(doc, win) {
+        var docE1 = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docE1.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth > 1024) {
+                    docE1.style.fontSize = '22px'
+                    return
+                }
+                docE1.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        recalc();
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body class="g-top">
+    <!-- 所有的页面都写在这个class底下 -->
+    <div class="wrap">
+        <div class="vipTerm">
+            <div class="topProduct">
+                <img src="images/vipProduct.png" alt="">
+            </div>
+                <div class="g-row">
+                    <div class="font-box">
+                        <div class="des">有效说明</div>
+                        <p>1、会员卡分为普通卡和金卡；</p>
+                        <p>a.普通卡：您成功开通会员当日开始计算，期限为3个月；</p>
+                        <p>b.金卡：您成为普通卡后3个月时限内通过平台消费积分或到店液化气消费积分累计达到500分即可升级为金卡，金卡将在您原来到期时间上自动延长1年时间；</p>
+                        <br>
+                        <p>2、到期说明：</p>
+                        <p>到期后系统将自动取消您的会员权益，给您带来不便敬请理解，在使用过程产生的消费积分请于到期时间之前进行兑换使用。到期后重新开通会员即可享受权益。</p>
+                    </div>
+                    <div class="f-card">
+                        <a href="我的会员卡.html">
+                            <span>商城消费<br>升级金卡</span>
+                            <i class="g-btn g-btn-blue">马上提升</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-footer g-fixed g-footer-blue">
+            <div class="g-col2">
+                <a class="g-btn">返回</a>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

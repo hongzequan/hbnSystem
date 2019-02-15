@@ -766,6 +766,44 @@ a{display: inline-block;vertical-align: middle;}
 .hx-video .prism-player .prism-cover:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.3);}
 .hx-video .font-box{position: absolute; font-size: .5rem; top: 7rem; left: 2.25rem; right: 2.25rem; bottom: 1.6rem; color: #f8e09f; text-align: center; overflow: hidden; }
 
+/*会员有效期*/
+.vipTerm{font-size: .65rem;}
+.vipTerm .topProduct{background: #000;text-align: center;padding: .5rem;}
+.vipTerm .topProduct img{}
+.vipTerm .font-box{}
+.vipTerm .font-box .des{text-align: center; border-bottom: 1px solid #ddd; line-height: 2rem; margin-bottom: .6rem; } 
+.vipTerm .font-box p{font-size: 13px;}
+.vipTerm .f-card{position: fixed;right: 1rem;bottom: 3rem;} 
+.vipTerm .f-card a{display: block;font-size: .6rem;} 
+.vipTerm .f-card span{display: block;text-align: center;background: #dcb965;color: #775615;width: 3.5rem;margin: 0 auto;padding: .2rem 0;border-radius: 6px 6px 0 0;position: relative;top: .2rem;background: -webkit-linear-gradient(left top, #cfa95a , #f1d88b); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(bottom right, #cfa95a, #f1d88b); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(bottom right, #cfa95a, #f1d88b); /* Firefox 3.6 - 15 */background: linear-gradient(to bottom right, #cfa95a , #f1d88b); /* 标准的语法 */} 
+.vipTerm .f-card i{display: inline-block;line-height: 1.25rem;height: 1.25rem;padding: 0 .5rem;font-size: .6rem;position: relative;width: 4.5rem;}
+
+/*我的会员卡*/
+.vipCard{font-size: .65rem;padding: .5rem;}
+.vipCard .card{background: #010101;font-size: .55rem;}
+.vipCard .card .img-box{border-bottom: 1px dashed #5a5a5a; margin-bottom: .5rem; text-align: center;} 
+.vipCard .card .img-box img{} 
+.vipCard .card .font-box{line-height: 1.1rem; } 
+.vipCard .card .font-box p{color: #fff;}
+.vipCard .card .font-box p span{}
+.vipCard .card .dueTime{color: #fff;position: absolute;right: 0;bottom: 0;background: #212121;padding: .25rem .3rem;border-radius: 6px 0 0 0;}
+.vipCard .myleve{margin: 1rem 0;font-size: .6rem;}
+.vipCard .myleve .g-col{position: relative;text-align: center;}
+.vipCard .myleve .g-col:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 1px;height: 100%;background: #e3e3e3;}
+.vipCard .myleve .g-col:first-child:before{display: none;}
+.vipCard .myleve .g-col p{display: inline-block;}
+.vipCard .myleve .g-col .icon-qia{color: #e6e6e6;font-size: .75rem;}
+.vipCard .font{font-size: .6rem; } 
+.vipCard .font li{border-bottom: 1px solid #ddd;padding: .5rem 0;}
+.vipCard .font li:last-child{border-bottom:0;}
+
+
+.inviteCard{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; } 
+.inviteCard .win{position: relative; z-index: 11; text-align: center; font-size: .75rem; margin: 2rem 1rem; } 
+.inviteCard .win p{color: #fff; } 
+.inviteCard .win img{} 
+.inviteCard .win .icon{width: 4rem; margin: 2rem 0; background: #f4f4f4; border-radius: 100%; } 
+.inviteCard .win .produ{margin-top: 2rem; width: 7rem; }
 
 
 /*超出1024的处理方式*/
