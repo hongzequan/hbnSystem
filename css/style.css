@@ -793,6 +793,7 @@ a{display: inline-block;vertical-align: middle;}
 .vipCard .myleve .g-col:first-child:before{display: none;}
 .vipCard .myleve .g-col p{display: inline-block;}
 .vipCard .myleve .g-col .icon-qia{color: #e6e6e6;font-size: .75rem;}
+.vipCard .myleve .g-col .icon-qia.gold{color: #f7cb50;}
 .vipCard .font{font-size: .6rem; } 
 .vipCard .font li{border-bottom: 1px solid #ddd;padding: .5rem 0;}
 .vipCard .font li:last-child{border-bottom:0;}
