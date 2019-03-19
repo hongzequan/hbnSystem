@@ -497,8 +497,9 @@ a{display: inline-block;vertical-align: middle;}
 #platformJoining .four .product-item li .font-box{border-bottom: 1px dashed #e55523;margin-bottom: .25rem;padding-bottom: .25rem;} 
 #platformJoining .four .product-item li .font-box h3{} 
 #platformJoining .four .product-item li .font-box p{color: #e55523; margin-bottom: .25rem; } 
-#platformJoining .four .product-item li .font-box .tag{} 
-#platformJoining .four .product-item li .font-box .tag span{display: inline-block; vertical-align: middle; color: #e55523; border: 1px solid #e55523; padding: 0 .25rem; border-radius: 6px; } 
+#platformJoining .four .product-item li .font-box .tag{font-size: 0;} 
+#platformJoining .four .product-item li .font-box .tag span{display: inline-block; vertical-align: middle; color: #e55523; border: 1px solid #e55523; padding: 0 .25rem; border-radius: 6px;font-size: .45rem; }
+#platformJoining .four .product-item li .font-box .tag span+span{margin-left: 5px;}
 #platformJoining .four .product-item li .detail{height: 1.5rem; line-height: .75rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 
 #platformJoining .six{padding: .5rem 2rem;}
