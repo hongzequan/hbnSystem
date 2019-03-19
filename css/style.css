@@ -491,14 +491,14 @@ a{display: inline-block;vertical-align: middle;}
 #platformJoining .four .top{position: absolute;top: 3.75rem;left: 4.75rem;font-size: 0.5rem;color: #e55523;border: 1px solid #e55523;border-radius: 1rem;padding: 0 .5rem;}
 #platformJoining .four .product-item{position: absolute;top: 7.25rem;left: 1.5rem;width: 12rem;padding: 0 .75rem;margin-left: -.5rem;}
 #platformJoining .four .product-item li{float: left;padding-left: .5rem;width: 50%;padding-bottom: .5rem;}
-#platformJoining .four .product-item li a{font-size: .45rem;}
+#platformJoining .four .product-item li a{display: block;font-size: .45rem;}
 #platformJoining .four .product-item li .img-box{margin-bottom: .25rem; } 
 #platformJoining .four .product-item li .img-box img{width: 100%;} 
 #platformJoining .four .product-item li .font-box{border-bottom: 1px dashed #e55523;margin-bottom: .25rem;padding-bottom: .25rem;} 
 #platformJoining .four .product-item li .font-box h3{} 
 #platformJoining .four .product-item li .font-box p{color: #e55523; margin-bottom: .25rem; } 
 #platformJoining .four .product-item li .font-box .tag{font-size: 0;} 
-#platformJoining .four .product-item li .font-box .tag span{display: inline-block; vertical-align: middle; color: #e55523; border: 1px solid #e55523; padding: 0 .25rem; border-radius: 6px;font-size: .45rem; }
+#platformJoining .four .product-item li .font-box .tag span{display: inline-block; vertical-align: middle; color: #e55523; border: 1px solid #e55523; padding: 0 .25rem; border-radius: 6px;font-size: .45rem;}
 #platformJoining .four .product-item li .font-box .tag span+span{margin-left: 5px;}
 #platformJoining .four .product-item li .detail{height: 1.5rem; line-height: .75rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 
